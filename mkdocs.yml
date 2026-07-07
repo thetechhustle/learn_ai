@@ -1,0 +1,104 @@
+site_name: Build With AI
+site_description: The agentic AI course for the culture — from curious to shipping, no gatekeeping.
+site_url: https://thetechhustle.github.io/build_with_ai/
+repo_url: https://github.com/thetechhustle/build_with_ai
+repo_name: thetechhustle/build_with_ai
+edit_uri: edit/main/docs/
+docs_dir: docs
+
+copyright: Copyright &copy; The Tech Hustle
+
+theme:
+  name: material
+  language: en
+  logo: assets/images/build-with-ai-mark.svg
+  favicon: assets/images/build-with-ai-mark.svg
+  palette:
+    - media: "(prefers-color-scheme: light)"
+      scheme: default
+      primary: black
+      accent: deep purple
+      toggle:
+        icon: material/weather-night
+        name: Switch to dark mode
+    - media: "(prefers-color-scheme: dark)"
+      scheme: slate
+      primary: black
+      accent: deep purple
+      toggle:
+        icon: material/weather-sunny
+        name: Switch to light mode
+  features:
+    - navigation.instant
+    - navigation.instant.progress
+    - navigation.tabs
+    - navigation.sections
+    - navigation.indexes
+    - navigation.path
+    - navigation.top
+    - navigation.footer
+    - toc.follow
+    - search.suggest
+    - search.highlight
+    - search.share
+    - content.code.copy
+    - content.tabs.link
+    - content.action.edit
+    - content.action.view
+
+plugins:
+  - search
+
+validation:
+  nav:
+    omitted_files: ignore
+
+markdown_extensions:
+  - admonition
+  - attr_list
+  - md_in_html
+  - footnotes
+  - tables
+  - toc:
+      permalink: true
+  - pymdownx.details
+  - pymdownx.superfences:
+      custom_fences:
+        - name: mermaid
+          class: mermaid
+          format: !!python/name:pymdownx.superfences.fence_code_format
+  - pymdownx.tabbed:
+      alternate_style: true
+  - pymdownx.tasklist:
+      custom_checkbox: true
+  - pymdownx.highlight:
+      anchor_linenums: true
+  - pymdownx.inlinehilite
+
+extra_css:
+  - stylesheets/course.css
+
+extra_javascript:
+  - javascripts/course.js
+
+nav:
+  - Home: index.md
+  - Course:
+      - Overview: course/overview.md
+      - Setup: course/setup.md
+      - Syllabus: course/syllabus.md
+      - Capstone: course/capstone.md
+      - Glossary: course/glossary.md
+      - Join the Cohort: course/join.md
+  - Lessons:
+      - "The Shift: Welcome to the Agentic Era": lessons/01_the_shift/README.md
+      - How AI Actually Works: lessons/02_how_ai_actually_works/README.md
+      - "Your Command Center": lessons/03_command_center/README.md
+      - The Agentic Loop: lessons/04_the_agentic_loop/README.md
+      - Context Engineering: lessons/05_context_engineering/README.md
+      - "Everyday Workflows": lessons/06_everyday_workflows/README.md
+      - "Skills: Teach Your Agent Your Moves": lessons/07_skills/README.md
+      - "MCP: Give Your Agent Hands": lessons/08_mcp_connecting_tools/README.md
+      - Hooks and Guardrails: lessons/09_hooks_and_guardrails/README.md
+      - "Agent Teams: Multi-Agent Orchestration": lessons/10_agent_teams/README.md
+      - Ship It and Sell It: lessons/11_ship_and_sell/README.md
