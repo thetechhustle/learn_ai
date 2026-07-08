@@ -9,7 +9,7 @@
 <p><em>54 lessons &nbsp;·&nbsp; 11 chapters &nbsp;·&nbsp; 2 learning lanes &nbsp;·&nbsp; no cost, no gatekeeping</em></p>
 
 <p>
-  <a href="https://thetechhustle.github.io/build_with_ai/">
+  <a href="https://thetechhustle.github.io/learn_ai/">
     <img alt="Course Site" src="https://img.shields.io/badge/Course%20Site-Live-7c3aed?style=for-the-badge&logo=bookstack&logoColor=white" />
   </a>
   <img alt="Lessons" src="https://img.shields.io/badge/Lessons-54-111827?style=for-the-badge&logoColor=white" />
@@ -17,18 +17,18 @@
   <a href="LICENSE">
     <img alt="License MIT" src="https://img.shields.io/badge/License-MIT-f59e0b?style=for-the-badge" />
   </a>
-  <a href="https://github.com/thetechhustle/build_with_ai/stargazers">
-    <img alt="Stars" src="https://img.shields.io/github/stars/thetechhustle/build_with_ai?style=for-the-badge&logo=github&color=f59e0b&label=Stars" />
+  <a href="https://github.com/thetechhustle/learn_ai/stargazers">
+    <img alt="Stars" src="https://img.shields.io/github/stars/thetechhustle/learn_ai?style=for-the-badge&logo=github&color=f59e0b&label=Stars" />
   </a>
 </p>
 
 <br/>
 
-<a href="https://thetechhustle.github.io/build_with_ai/"><strong>🚀 Launch the Course</strong></a>
+<a href="https://thetechhustle.github.io/learn_ai/"><strong>🚀 Launch the Course</strong></a>
 &nbsp;&nbsp;·&nbsp;&nbsp;
-<a href="https://thetechhustle.github.io/build_with_ai/course/syllabus/"><strong>📚 View the Syllabus</strong></a>
+<a href="https://thetechhustle.github.io/learn_ai/course/syllabus/"><strong>📚 View the Syllabus</strong></a>
 &nbsp;&nbsp;·&nbsp;&nbsp;
-<a href="https://thetechhustle.github.io/build_with_ai/course/join/"><strong>🎟️ Join the Cohort</strong></a>
+<a href="https://thetechhustle.github.io/learn_ai/course/join/"><strong>🎟️ Join the Cohort</strong></a>
 &nbsp;&nbsp;·&nbsp;&nbsp;
 <a href="#-contribute--community"><strong>🤝 Contribute</strong></a>
 
@@ -142,7 +142,7 @@ Move at your own pace. Engineers can clear Track 1 in an evening. If you're bran
 
 **Option 1 — Read on the web (no setup needed)**
 
-👉 **[thetechhustle.github.io/build_with_ai](https://thetechhustle.github.io/build_with_ai/)**
+👉 **[thetechhustle.github.io/learn_ai](https://thetechhustle.github.io/learn_ai/)**
 
 <br/>
 
@@ -150,8 +150,8 @@ Move at your own pace. Engineers can clear Track 1 in an evening. If you're bran
 
 ```bash
 # Clone
-git clone https://github.com/thetechhustle/build_with_ai.git
-cd build_with_ai
+git clone https://github.com/thetechhustle/learn_ai.git
+cd learn_ai
 
 # Install and serve
 make install
@@ -187,7 +187,7 @@ Where the lanes genuinely differ, lessons split into tabbed **🌱 no-code** and
 
 ## 🎓 Capstone Project
 
-When you reach the end, the [capstone](https://thetechhustle.github.io/build_with_ai/course/capstone/) challenges you to:
+When you reach the end, the [capstone](https://thetechhustle.github.io/learn_ai/course/capstone/) challenges you to:
 
 - Take a real project from vision brief to **live public URL**
 - Engineer the context: a CLAUDE.md that makes your agent a teammate
@@ -203,7 +203,7 @@ No submission. No grading. It's proof to yourself — and a portfolio piece with
 
 > An AI agent can create, modify, and delete real files and run real commands. That's the power — and the risk.
 
-Every lab in this course happens inside a **dedicated projects folder under version control**, and the verify step is built into every lesson. You'll learn to review what an agent did before you trust it — the habit that separates professionals from cautionary tales. [Setup](https://thetechhustle.github.io/build_with_ai/course/setup/) gets you a safe environment in about 30 minutes.
+Every lab in this course happens inside a **dedicated projects folder under version control**, and the verify step is built into every lesson. You'll learn to review what an agent did before you trust it — the habit that separates professionals from cautionary tales. [Setup](https://thetechhustle.github.io/learn_ai/course/setup/) gets you a safe environment in about 30 minutes.
 
 ---
 
@@ -212,9 +212,9 @@ Every lab in this course happens inside a **dedicated projects folder under vers
 This course is open source and community-maintained. Every improvement matters.
 
 **Ways to contribute:**
-- 🐛 [Open an issue](https://github.com/thetechhustle/build_with_ai/issues) — broken link, outdated command, unclear explanation
-- ✍️ [Submit a PR](https://github.com/thetechhustle/build_with_ai/pulls) — improve a lesson, add a build story, extend the glossary
-- ⭐ [Star the repo](https://github.com/thetechhustle/build_with_ai/stargazers) — helps other learners find the course
+- 🐛 [Open an issue](https://github.com/thetechhustle/learn_ai/issues) — broken link, outdated command, unclear explanation
+- ✍️ [Submit a PR](https://github.com/thetechhustle/learn_ai/pulls) — improve a lesson, add a build story, extend the glossary
+- ⭐ [Star the repo](https://github.com/thetechhustle/learn_ai/stargazers) — helps other learners find the course
 - 📣 Share it — put someone on. That's how the culture wins.
 
 ---
@@ -254,8 +254,8 @@ requirements.txt          # Python dependencies
 
 <br/>
 
-[![Star this repo](https://img.shields.io/github/stars/thetechhustle/build_with_ai?style=social)](https://github.com/thetechhustle/build_with_ai/stargazers)
+[![Star this repo](https://img.shields.io/github/stars/thetechhustle/learn_ai?style=social)](https://github.com/thetechhustle/learn_ai/stargazers)
 &nbsp;&nbsp;
-[![Fork this repo](https://img.shields.io/github/forks/thetechhustle/build_with_ai?style=social)](https://github.com/thetechhustle/build_with_ai/fork)
+[![Fork this repo](https://img.shields.io/github/forks/thetechhustle/learn_ai?style=social)](https://github.com/thetechhustle/learn_ai/fork)
 
 </div>

@@ -1,8 +1,8 @@
 site_name: Build With AI
 site_description: The agentic AI course for the culture — from curious to shipping, no gatekeeping.
-site_url: https://thetechhustle.github.io/build_with_ai/
-repo_url: https://github.com/thetechhustle/build_with_ai
-repo_name: thetechhustle/build_with_ai
+site_url: https://thetechhustle.github.io/learn_ai/
+repo_url: https://github.com/thetechhustle/learn_ai
+repo_name: thetechhustle/learn_ai
 edit_uri: edit/main/docs/
 docs_dir: docs
 

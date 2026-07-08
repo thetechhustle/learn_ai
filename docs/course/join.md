@@ -67,7 +67,7 @@ Cohorts run monthly and seats are capped so reviews stay real.
 <!-- Wire your checkout link here (Stripe Payment Link, Gumroad, or Whop) -->
 **[→ Reserve your seat for the next cohort](https://github.com/thetechhustle)**
 
-Questions first? Open a [discussion on GitHub](https://github.com/thetechhustle/build_with_ai/discussions) and ask anything.
+Questions first? Open a [discussion on GitHub](https://github.com/thetechhustle/learn_ai/discussions) and ask anything.
 
 ## FAQ
 
