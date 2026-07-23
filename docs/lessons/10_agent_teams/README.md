@@ -33,3 +33,7 @@ There's a moment in every builder's multi-agent week where it stops feeling like
 - [10.5 The Orchestrator Mindset](10.5_the_orchestrator_mindset.md)
 
 <!-- lesson-index:end -->
+
+## Chapter checkpoint
+
+Complete [Chapter 10: Parallel only when justified](../../course/assessment/chapter-checkpoints.md#chapter-10-parallel-only-when-justified), save the evidence, then score your first attempt with the shared rubric.

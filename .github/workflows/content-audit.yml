@@ -1,0 +1,30 @@
+name: content-audit
+
+on:
+  schedule:
+    - cron: '17 9 1 */3 *'
+  workflow_dispatch:
+
+permissions:
+  contents: read
+
+jobs:
+  audit:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: '3.12'
+      - name: Run audit self-tests
+        run: python scripts/audit_course.py --self-test
+      - name: Audit course content
+        if: always()
+        run: python scripts/audit_course.py --json content-audit-report.json
+      - name: Preserve audit evidence
+        if: always()
+        uses: actions/upload-artifact@v4
+        with:
+          name: content-audit-report
+          path: content-audit-report.json
+          if-no-files-found: warn

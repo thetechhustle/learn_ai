@@ -33,3 +33,7 @@ The difference between people who get magic out of agents and people who get mus
 - [4.5 The Builder Loop, End to End](4.5_the_builder_loop_end_to_end.md)
 
 <!-- lesson-index:end -->
+
+## Chapter checkpoint
+
+Complete [Chapter 4: Builder Loop with a caught failure](../../course/assessment/chapter-checkpoints.md#chapter-4-builder-loop-with-a-caught-failure), save the evidence, then score your first attempt with the shared rubric.

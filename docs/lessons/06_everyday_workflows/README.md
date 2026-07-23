@@ -33,3 +33,7 @@ Somewhere in this chapter, it clicks. Not "I understand agents" — that happene
 - [6.5 Your First True Automation](6.5_your_first_true_automation.md)
 
 <!-- lesson-index:end -->
+
+## Chapter checkpoint
+
+Complete [Chapter 6: Reusable real-work workflow](../../course/assessment/chapter-checkpoints.md#chapter-6-reusable-real-work-workflow), save the evidence, then score your first attempt with the shared rubric.

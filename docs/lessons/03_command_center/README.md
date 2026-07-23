@@ -39,3 +39,7 @@ Complete [Setup](../../course/setup.md) first — terminal, Claude Code, Git/Git
 - [3.5 Session Habits That Keep You Safe](3.5_session_habits_that_keep_you_safe.md)
 
 <!-- lesson-index:end -->
+
+## Chapter checkpoint
+
+Complete [Chapter 3: Recoverable first session](../../course/assessment/chapter-checkpoints.md#chapter-3-recoverable-first-session), save the evidence, then score your first attempt with the shared rubric.

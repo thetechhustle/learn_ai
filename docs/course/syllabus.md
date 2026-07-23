@@ -18,6 +18,8 @@ The course is organized as one continuous builder path. Foundations first, then 
 
 **54 lessons · 4 tracks · 1 capstone.**
 
+Each chapter ends with a scored [performance checkpoint](assessment/chapter-checkpoints.md). Complete the task before opening the [answer key and evidence rubric](assessment/answer-key.md); open-ended builds are scored against observable evidence, not one preferred implementation.
+
 ## Track map
 
 | Track | Chapters | You walk away with |
@@ -27,4 +29,4 @@ The course is organized as one continuous builder path. Foundations first, then 
 | Agentic engineering | 7–9 | Skills, MCP connections, and guardrails — a customized, safe agent |
 | Orchestration & shipping | 10–11 | Multi-agent workflows and a launched, sellable project |
 
-When you finish Chapter 11, take on the [Capstone](capstone.md).
+Before Chapter 1, save an [entry diagnostic](assessment/diagnostic.md) baseline. When you finish Chapter 11, retake it as the exit diagnostic, compare the evidence, then take on the [Capstone](capstone.md).

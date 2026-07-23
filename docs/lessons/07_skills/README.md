@@ -31,3 +31,7 @@ Think about the best person you've ever worked with — the one whose checklist,
 - [7.4 The Skill Library](7.4_the_skill_library.md)
 
 <!-- lesson-index:end -->
+
+## Chapter checkpoint
+
+Complete [Chapter 7: Skill that earns reuse](../../course/assessment/chapter-checkpoints.md#chapter-7-skill-that-earns-reuse), save the evidence, then score your first attempt with the shared rubric.

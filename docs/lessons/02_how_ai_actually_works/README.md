@@ -34,3 +34,7 @@ Two people ask an AI the same question. One gets gold, one gets garbage, and the
 - [2.5 Choosing Your Tools](2.5_choosing_your_tools.md)
 
 <!-- lesson-index:end -->
+
+## Chapter checkpoint
+
+Complete [Chapter 2: Predict the failure](../../course/assessment/chapter-checkpoints.md#chapter-2-predict-the-failure), save the evidence, then score your first attempt with the shared rubric.

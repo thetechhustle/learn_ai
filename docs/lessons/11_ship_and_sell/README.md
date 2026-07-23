@@ -34,3 +34,7 @@ Back? Good. That gap you just felt between then-you and now-you: this chapter is
 - [11.5 Staying Current, Finishing Strong](11.5_staying_current_finishing_strong.md)
 
 <!-- lesson-index:end -->
+
+## Chapter checkpoint
+
+Complete [Chapter 11: Evidence-backed launch](../../course/assessment/chapter-checkpoints.md#chapter-11-evidence-backed-launch), save the evidence, then score your first attempt with the shared rubric.

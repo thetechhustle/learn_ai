@@ -30,3 +30,7 @@ Ask anyone who ships software for a living where quality actually comes from. It
 - [9.4 Permission Policy](9.4_permission_policy.md)
 
 <!-- lesson-index:end -->
+
+## Chapter checkpoint
+
+Complete [Chapter 9: Guardrail that proves itself](../../course/assessment/chapter-checkpoints.md#chapter-9-guardrail-that-proves-itself), save the evidence, then score your first attempt with the shared rubric.

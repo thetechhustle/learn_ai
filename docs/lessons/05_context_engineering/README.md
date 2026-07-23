@@ -35,3 +35,7 @@ In Lesson 4.5's retro you wrote down what your agent needed but didn't have. Mul
 - [5.6 Context at Scale: Big Codebases](5.6_context_at_scale_big_codebases.md)
 
 <!-- lesson-index:end -->
+
+## Chapter checkpoint
+
+Complete [Chapter 5: Context experiment](../../course/assessment/chapter-checkpoints.md#chapter-5-context-experiment), save the evidence, then score your first attempt with the shared rubric.

@@ -54,6 +54,18 @@ These are loose estimates. Engineers may clear the first three chapters in an ev
 
 For the complete chapter sequence, use the [Syllabus](syllabus.md). When you finish the chapters, the [Capstone](capstone.md) is where you prove it to yourself — and produce the receipt you can show anyone else.
 
+## Your evidence path
+
+Use the course as a measured practice, not a reading streak:
+
+1. Take the [entry diagnostic](assessment/diagnostic.md) before reading the answer key. Save the dated score and evidence.
+2. Complete [Setup](setup.md), then establish the [Starter Project](starter-project.md) baseline.
+3. At the end of every chapter, complete its [performance checkpoint](assessment/chapter-checkpoints.md). Use the [rubric and answer key](assessment/answer-key.md) only after submitting your first attempt.
+4. Use the [Recovery Guide](recovery-guide.md) whenever a lab or agent change fails.
+5. Retake the same diagnostic as an exit measure, compare evidence rather than confidence, then begin the [Capstone](capstone.md).
+
+The [competency framework](assessment/competency-framework.md) explains exactly what the course measures. Scores are feedback about the next practice step, not credentials or predictions of job performance.
+
 ## How the two lanes work
 
 Lessons are written for everyone. Where the path genuinely differs — setup steps, practice work, depth of code — you'll see tabbed sections:

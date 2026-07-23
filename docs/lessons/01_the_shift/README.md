@@ -41,3 +41,7 @@ Read the lessons in order — each one builds on the last. Watch at least one of
 - [1.5 How to Run This Course](1.5_how_to_run_this_course.md)
 
 <!-- lesson-index:end -->
+
+## Chapter checkpoint
+
+Complete [Chapter 1: Opportunity without hype](../../course/assessment/chapter-checkpoints.md#chapter-1-opportunity-without-hype), save the evidence, then score your first attempt with the shared rubric.

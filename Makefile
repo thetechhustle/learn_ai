@@ -1,4 +1,4 @@
-.PHONY: install serve build clean index
+.PHONY: install serve build clean index audit audit-test
 
 VENV := .venv
 PY := $(VENV)/bin/python
@@ -23,6 +23,12 @@ build: install
 
 index:
 	python3 scripts/build_chapter_indexes.py
+
+audit:
+	python3 scripts/audit_course.py
+
+audit-test:
+	python3 scripts/audit_course.py --self-test
 
 clean:
 	rm -rf site

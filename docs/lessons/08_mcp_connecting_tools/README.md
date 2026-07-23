@@ -35,3 +35,7 @@ The demo that converts every skeptic is always the same shape: "wait — it just
 - [8.5 Trust Boundaries](8.5_trust_boundaries.md)
 
 <!-- lesson-index:end -->
+
+## Chapter checkpoint
+
+Complete [Chapter 8: Least-privilege connection decision](../../course/assessment/chapter-checkpoints.md#chapter-8-least-privilege-connection-decision), save the evidence, then score your first attempt with the shared rubric.

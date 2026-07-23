@@ -85,9 +85,18 @@ nav:
   - Home: index.md
   - Course:
       - Overview: course/overview.md
+      - Entry and Exit Diagnostic: course/assessment/diagnostic.md
       - Setup: course/setup.md
+      - Starter Project: course/starter-project.md
+      - Recovery Guide: course/recovery-guide.md
       - Syllabus: course/syllabus.md
+      - Assessments:
+          - Assessment Overview: course/assessment/README.md
+          - Competency Framework: course/assessment/competency-framework.md
+          - Chapter Checkpoints: course/assessment/chapter-checkpoints.md
+          - Answer Key and Rubrics: course/assessment/answer-key.md
       - Capstone: course/capstone.md
+      - Course Maintenance: course/maintenance.md
       - Glossary: course/glossary.md
       - Join the Cohort: course/join.md
   - Lessons:

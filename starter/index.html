@@ -1,0 +1,84 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Build With AI Task Dashboard</title>
+    <link rel="stylesheet" href="styles.css">
+  </head>
+  <body>
+    <a class="skip-link" href="#task-table">Skip to tasks</a>
+    <header class="page-header">
+      <div>
+        <p class="eyebrow">Build With AI starter</p>
+        <h1>Task dashboard</h1>
+        <p>Practice directing and verifying an agent with synthetic project data.</p>
+      </div>
+      <p class="data-label">Local data only</p>
+    </header>
+
+    <main>
+      <section aria-labelledby="summary-heading">
+        <h2 id="summary-heading">Project summary</h2>
+        <div class="summary-grid" id="summary-grid" aria-live="polite"></div>
+      </section>
+
+      <section aria-labelledby="tasks-heading">
+        <div class="section-heading">
+          <h2 id="tasks-heading">Tasks</h2>
+          <div class="filters" aria-label="Task filters">
+            <label>
+              Status
+              <select id="status-filter">
+                <option value="all">All statuses</option>
+                <option value="backlog">Backlog</option>
+                <option value="in-progress">In progress</option>
+                <option value="done">Done</option>
+              </select>
+            </label>
+            <label>
+              Risk
+              <select id="risk-filter">
+                <option value="all">All risks</option>
+                <option value="low">Low</option>
+                <option value="medium">Medium</option>
+                <option value="high">High</option>
+              </select>
+            </label>
+          </div>
+        </div>
+
+        <p id="result-count" aria-live="polite"></p>
+        <div class="table-wrap">
+          <table id="task-table">
+            <caption class="visually-hidden">Synthetic course practice tasks</caption>
+            <thead>
+              <tr>
+                <th scope="col">ID</th>
+                <th scope="col">Task</th>
+                <th scope="col">Status</th>
+                <th scope="col">Risk</th>
+                <th scope="col">Owner</th>
+              </tr>
+            </thead>
+            <tbody id="task-rows"></tbody>
+          </table>
+        </div>
+        <p id="empty-state" class="empty-state" hidden>No tasks match both filters.</p>
+      </section>
+    </main>
+
+    <script id="task-data" type="application/json">
+      [
+        {"id":"T-101","title":"Draft kickoff notes","status":"backlog","risk":"low","owner":"Avery"},
+        {"id":"T-102","title":"Review accessibility checklist","status":"in-progress","risk":"medium","owner":"Blair"},
+        {"id":"T-103","title":"Confirm launch copy","status":"done","risk":"low","owner":"Casey"},
+        {"id":"T-104","title":"Verify source citations","status":"backlog","risk":"high","owner":""},
+        {"id":"T-105","title":"Test keyboard navigation","status":"in-progress","risk":"high","owner":"Devon"},
+        {"id":"T-106","title":"Archive sample brief","status":"done","risk":"medium","owner":"Emery"}
+      ]
+    </script>
+    <script src="task-tools.js"></script>
+    <script src="app.js"></script>
+  </body>
+</html>
