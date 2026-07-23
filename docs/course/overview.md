@@ -28,8 +28,8 @@ None for the no-code lane. The engineer lane assumes you can read code and use G
 You will need:
 
 - A computer you control (Mac, Windows, or Linux).
-- A Claude account — the course uses Claude Code as its primary tool. A paid plan gets the most out of the labs; the concepts transfer to any agentic tool.
-- About 30 minutes for [Setup](setup.md) before Chapter 3.
+- An eligible Claude plan or API-backed Console account — the free Claude.ai plan does not include Claude Code. The course teaches transferable concepts through this concrete implementation.
+- Usually 45–60 minutes for [Setup](setup.md) before Chapter 3, longer if account or platform troubleshooting is needed.
 
 ## Time expectations
 
@@ -37,8 +37,9 @@ You will need:
 | --- | --- |
 | One lesson | 15–35 minutes |
 | One chapter | 1.5–4 hours |
-| Full course (all 11 chapters) | 35–55 hours |
-| Capstone project | 6–12 hours additional |
+| Reading path (all 11 chapters) | 35–55 hours |
+| Hands-on labs | Additional time; several run across days or weeks |
+| Capstone project | Commonly 8–20+ hours, depending on scope and review |
 
 These are loose estimates. Engineers may clear the first three chapters in an evening; if you're new, take the time — the foundations carry everything else.
 

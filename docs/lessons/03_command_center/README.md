@@ -11,7 +11,7 @@ Engineers: skim 3.1–3.3 at speed, but do run 3.4 and 3.5 — the session habit
     - Understand files, folders, and paths the way the machine does.
     - Use Git as your undo button: init, add, commit, restore.
     - Run your first full Claude Code session — brief, watch, review, commit.
-    - Adopt the session safety habits that make agent work reversible.
+    - Adopt session safety habits and recognize what Git can and cannot recover.
 
 !!! success "Builder principle"
     The terminal is not a test of whether you belong. It's a room, and this chapter hands you the keys.
@@ -26,7 +26,7 @@ Everybody who now lives in the terminal once stared at that blinking cursor with
 
 ## Before you start
 
-Complete [Setup](../../course/setup.md) first — terminal, Node, Git, GitHub account, Claude Code installed, `~/builds` folder created. Thirty minutes, one time.
+Complete [Setup](../../course/setup.md) first — terminal, Claude Code, Git/GitHub authentication, Chapter 8's Node dependency, and `~/builds`. Allow 45–60 minutes; account or platform troubleshooting may take longer.
 
 <!-- lesson-index:start -->
 

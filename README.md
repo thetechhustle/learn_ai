@@ -6,7 +6,7 @@
 
 <p><strong>The free, open-source agentic AI course — from curious to shipping, built for the culture. ⚡</strong></p>
 
-<p><em>54 lessons &nbsp;·&nbsp; 11 chapters &nbsp;·&nbsp; 2 learning lanes &nbsp;·&nbsp; no cost, no gatekeeping</em></p>
+<p><em>54 lessons &nbsp;·&nbsp; 11 chapters &nbsp;·&nbsp; 2 learning lanes &nbsp;·&nbsp; course materials free and open</em></p>
 
 <p>
   <a href="https://thetechhustle.github.io/learn_ai/">
@@ -131,8 +131,9 @@ You will not just prompt and pray. You will **decide what done looks like**, eng
 |---|---|
 | Single lesson | 15–35 minutes |
 | Full chapter | 1.5–4 hours |
-| Complete course | 35–55 hours |
-| Capstone project | +6–12 hours |
+| Complete reading path | 35–55 hours |
+| Hands-on labs | Additional time; several run across days or weeks |
+| Capstone project | Commonly +8–20 hours, depending on scope and review |
 
 Move at your own pace. Engineers can clear Track 1 in an evening. If you're brand new, take your time — the foundations carry everything else. There are no gates.
 
@@ -178,7 +179,7 @@ Every lesson answers five questions:
 1. **What is this concept?** — Plain language first, precision second
 2. **Why does it matter to a builder?** — The money, the time, or the risk it touches
 3. **What does it look like in a real session?** — Actual commands, actual output
-4. **What can you build with it right now?** — Hands-on, reversible, in your own workspace
+4. **What can you build with it right now?** — Hands-on, scoped, with an explicit recovery boundary
 5. **How do you know it worked?** — Verification is a step, not a vibe
 
 Where the lanes genuinely differ, lessons split into tabbed **🌱 no-code** and **⚙️ engineer** sections — read yours, skim the other.
@@ -189,11 +190,11 @@ Where the lanes genuinely differ, lessons split into tabbed **🌱 no-code** and
 
 When you reach the end, the [capstone](https://thetechhustle.github.io/learn_ai/course/capstone/) challenges you to:
 
-- Take a real project from vision brief to **live public URL**
+- Take a real project from vision brief to **reviewable deployment or demo**
 - Engineer the context: a CLAUDE.md that makes your agent a teammate
-- Use at least one custom Skill, one MCP connection, and one guardrail hook
+- Use or deliberately decline equivalent context, tool, and guardrail mechanisms
 - Verify the work end-to-end — on a device that isn't yours, for a person that isn't you
-- Produce a handoff document and a build log with real cost numbers
+- Produce a handoff document and a build log with usage evidence and honest cost estimates
 
 No submission. No grading. It's proof to yourself — and a portfolio piece with receipts you can show anyone.
 
@@ -203,7 +204,7 @@ No submission. No grading. It's proof to yourself — and a portfolio piece with
 
 > An AI agent can create, modify, and delete real files and run real commands. That's the power — and the risk.
 
-Every lab in this course happens inside a **dedicated projects folder under version control**, and the verify step is built into every lesson. You'll learn to review what an agent did before you trust it — the habit that separates professionals from cautionary tales. [Setup](https://thetechhustle.github.io/learn_ai/course/setup/) gets you a safe environment in about 30 minutes.
+Every lab in this course happens inside a **dedicated projects folder under version control**, and the verify step is built into every lesson. Git protects tracked files within a defined boundary; permissions, sandboxes, scoped credentials, and service-specific recovery cover other effects. [Setup](https://thetechhustle.github.io/learn_ai/course/setup/) usually takes 45–60 minutes.
 
 ---
 

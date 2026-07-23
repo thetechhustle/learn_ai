@@ -1,14 +1,14 @@
 # Setup
 
-Everything you need to run the labs in this course, in about 30 minutes. Do this before Chapter 3. If a step fails, don't push through blind — the [Glossary](glossary.md) and the troubleshooting notes below cover the common snags.
+Everything you need to run the labs in this course, usually in 45–60 minutes. Account, operating-system, or corporate controls can take longer. Do this before Chapter 3. If a step fails, don't push through blind — use the linked official guidance and troubleshooting notes.
 
 ## What you're setting up
 
 1. A **terminal** you're comfortable opening.
-2. **Node.js** (the runtime Claude Code ships on).
-3. **Git** and a free **GitHub** account (your safety net and your portfolio).
-4. **Claude Code** and a Claude account.
-5. A dedicated **projects folder** so agent work never touches your personal files.
+2. **Claude Code** and an account that includes access.
+3. **Git** and a free **GitHub** account (one layer of your safety net and portfolio).
+4. **Node.js LTS** for the `npx`-based MCP labs in Chapter 8.
+5. A dedicated **projects folder** so agent work stays away from personal files.
 
 ## 1. Open your terminal
 
@@ -16,7 +16,7 @@ Everything you need to run the labs in this course, in about 30 minutes. Do this
 
     **Mac:** Press ++cmd+space++, type `Terminal`, press ++enter++. That window is your new office.
 
-    **Windows:** Install [Windows Terminal](https://aka.ms/terminal) from the Microsoft Store, then install WSL by opening it and running `wsl --install`. Restart when asked. The course assumes the Linux (WSL) environment on Windows — it's the industry default and everything in the lessons will match.
+    **Windows:** Open PowerShell or Windows Terminal. Claude Code supports native Windows, so WSL is optional. Use WSL 2 if you want a Linux toolchain or Claude Code's Bash sandbox; native Windows is the simpler start for Windows-native projects.
 
     Type this and press ++enter++ to prove you're alive:
 
@@ -28,32 +28,62 @@ Everything you need to run the labs in this course, in about 30 minutes. Do this
 
 === "⚙️ Engineer lane"
 
-    Use whatever you already run — iTerm2, Ghostty, Windows Terminal + WSL2, or a native Linux shell. Claude Code works best in a real terminal rather than an IDE-embedded one for the first sessions, so you see exactly what it does.
+    Use whatever you already run — iTerm2, Ghostty, PowerShell, Windows Terminal + WSL2, or a Linux shell. A standalone terminal makes the first sessions easier to follow, but native Windows and IDE integrations are supported.
 
-## 2. Install Node.js
+## 2. Install Claude Code
 
-=== "🌱 No-code lane"
+The [official setup guide](https://code.claude.com/docs/en/setup) recommends the native installer. Claude Code runs as a native binary; Node.js is not its runtime or a prerequisite for this installation.
 
-    Download the **LTS** installer from [nodejs.org](https://nodejs.org) and run it like any other app. Then confirm in your terminal:
-
-    ```console
-    $ node --version
-    ```
-
-    Any version 18 or higher is fine.
-
-=== "⚙️ Engineer lane"
-
-    Use your version manager of choice:
+=== "Mac, Linux, or WSL"
 
     ```console
-    $ fnm install --lts   # or: nvm install --lts / mise use -g node@lts
-    $ node --version
+    $ curl -fsSL https://claude.ai/install.sh | bash
     ```
 
-## 3. Install Git and create a GitHub account
+=== "Windows PowerShell"
 
-Git is the undo button for everything you'll build. Non-negotiable, both lanes.
+    ```powershell
+    irm https://claude.ai/install.ps1 | iex
+    ```
+
+=== "Windows CMD"
+
+    ```bat
+    curl -fsSL https://claude.ai/install.cmd -o install.cmd && install.cmd && del install.cmd
+    ```
+
+Then verify the installation:
+
+```console
+$ claude --version
+$ claude doctor
+```
+
+!!! note "npm is an alternative"
+    If you manage tools through npm, `npm install -g @anthropic-ai/claude-code` is still supported, but the current package requires **Node.js 22 or later**. The installed Claude Code binary does not use Node at runtime. Do not use `sudo npm install -g`.
+
+Start Claude Code once to log in:
+
+```console
+$ claude
+```
+
+Follow the browser prompt. Claude Code requires a Pro, Max, Team, Enterprise, or Console account; the free Claude.ai plan does not include Claude Code. Type `/exit` after you connect.
+
+## 3. Install Node.js for Chapter 8
+
+Chapter 8 uses `npx` to run some MCP servers, so install the current **Node.js LTS** release from [nodejs.org](https://nodejs.org). It is a lab dependency, not Claude Code's runtime.
+
+```console
+$ node --version
+$ npx --version
+```
+
+If you use a version manager, `fnm install --lts`, `nvm install --lts`, or the equivalent is fine.
+
+## 4. Install Git and create a GitHub account
+
+Git gives tracked project files recoverable checkpoints. It does not back up untracked or ignored files, undo changes in databases or remote services, or replace a real backup.
 
 ```console
 $ git --version
@@ -68,27 +98,20 @@ $ git config --global user.name "Your Name"
 $ git config --global user.email "you@example.com"
 ```
 
+Authenticate before the first push. The GitHub CLI is the course's later workflow, so install it from the [official `gh` instructions](https://cli.github.com/) and run:
+
+```console
+$ gh auth login
+$ gh auth status
+```
+
+Choose HTTPS and follow the browser flow. If you cannot use `gh`, use GitHub's official HTTPS credential-manager or SSH-key guidance; do not put a personal access token directly in a remote URL or project file.
+
 !!! example "Watch: Git in one sitting"
     New to Git? Watch freeCodeCamp's [Git and GitHub for Beginners — Crash Course](https://www.youtube.com/watch?v=RGOj5yH7evk) (1 hr). You don't need all of it yet — the first 30 minutes covers everything Chapter 3 uses.
 
-## 4. Install Claude Code
-
-```console
-$ npm install -g @anthropic-ai/claude-code
-```
-
-Then start it once to log in:
-
-```console
-$ claude
-```
-
-Follow the login prompt in your browser. When you see the Claude Code prompt in your terminal, you're connected. Type `/exit` to leave.
-
-Official install docs, including native installers: [code.claude.com/docs](https://code.claude.com/docs/en/overview).
-
 !!! warning "Plans and cost"
-    Claude Code runs on your Claude subscription or API credits. Start with a Pro plan or a small API budget and watch usage with `/cost` during sessions. Chapter 11 covers cost strategy properly — until then, small sessions, small projects.
+    Claude Code runs through an eligible subscription or API-backed Console account. Use `/usage` to watch plan allowance or API token use. Subscription users see plan usage, not a billable per-session charge. API dollar figures are local estimates; the [Claude Console usage page](https://console.anthropic.com/settings/usage) is authoritative for billing. Chapter 11 covers budgeting in detail.
 
 ## 5. Create your projects folder
 
@@ -99,7 +122,7 @@ $ mkdir -p ~/builds
 $ cd ~/builds
 ```
 
-Every lab in this course starts from `~/builds`. Agents act on real files — a dedicated folder plus Git means every experiment is reversible.
+Every lab in this course starts from `~/builds`. A dedicated folder plus Git narrows the workspace and checkpoints tracked files; it does not make external actions or untracked/ignored state automatically reversible.
 
 ## Verify the full setup
 
@@ -107,7 +130,9 @@ Run each line. Every one should answer without an error:
 
 ```console
 $ node --version
+$ npx --version
 $ git --version
+$ gh auth status
 $ claude --version
 $ ls ~/builds
 ```
@@ -116,6 +141,6 @@ All green? You're ready. Head to [Chapter 1](../lessons/01_the_shift/README.md) 
 
 ## Troubleshooting
 
-- **`command not found: claude`** — your npm global bin isn't on PATH. Run `npm config get prefix`; add its `bin` folder to your shell profile, or reinstall Node via the LTS installer which wires this up for you.
-- **Windows without WSL** — Claude Code supports native Windows, but lessons show Unix-style commands. WSL keeps you on the happy path.
+- **`command not found: claude`** — run `claude doctor` if available, then use the [official install troubleshooting guide](https://code.claude.com/docs/en/setup). For an npm installation, confirm Node 22+ and that npm's global bin directory is on `PATH`.
+- **Native Windows command differences** — the course examples use Unix-style commands. Git for Windows adds Git Bash; WSL 2 provides a fuller Linux environment and supports Bash sandboxing. Native PowerShell remains supported.
 - **Corporate machine** — if installs are blocked, use a personal machine. You need an environment you're allowed to experiment in.

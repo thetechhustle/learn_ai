@@ -26,7 +26,7 @@ Use this glossary as a quick lookup while working through the lessons. Definitio
 
 **Context engineering**: Deliberately shaping what the agent sees — briefs, CLAUDE.md, memory, examples, scoped tasks — so it performs at its best. The successor to "prompt engineering."
 
-**Context window**: The model's working memory — the maximum amount of text it can consider at once, measured in tokens. When it fills up, older material gets summarized or dropped.
+**Context window**: The maximum input/output budget for a model interaction, measured in tokens. Material can be summarized or dropped as it fills, and fitting does not guarantee perfect attention.
 
 **Deploy**: Putting your project on the public internet so anyone can reach it. GitHub Pages, Vercel, and Netlify make this nearly free.
 
@@ -64,7 +64,7 @@ Use this glossary as a quick lookup while working through the lessons. Definitio
 
 **Skill**: A reusable instruction package that teaches Claude Code a specific capability or your specific way of doing something. Write once, invoke forever.
 
-**Slash command**: A quick command inside a Claude Code session starting with `/`, like `/clear`, `/cost`, or custom ones you create.
+**Slash command**: A quick command inside a Claude Code session starting with `/`, like `/clear`, `/usage`, or a compatible custom command you create.
 
 **Subagent**: An agent your main agent spawns to handle a piece of work in its own context — research, review, a parallel task — reporting back when done.
 
