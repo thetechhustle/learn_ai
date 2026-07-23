@@ -1,0 +1,52 @@
+SIMULATED RECORD - not executed by the learner
+
+STAGE 1: CLEAN BASELINE
+PASS required starter files exist
+PASS task data parses as JSON
+PASS task data matches the schema
+PASS summary matches expected output
+PASS filters combine status and risk
+PASS page exposes accessible landmarks
+PASS page loads local assets
+PASS runtime files contain no network or credential markers
+
+8 checks passed.
+
+STAGE 2: OWNER CHANGED, EXPECTED SUMMARY STILL OLD
+PASS required starter files exist
+PASS task data parses as JSON
+PASS task data matches the schema
+FAIL summary matches expected output
+PASS filters combine status and risk
+PASS page exposes accessible landmarks
+PASS page loads local assets
+PASS runtime files contain no network or credential markers
+
+summary matches expected output: expected {"total":6,"open":4,"done":2,"highRiskOpen":2,"unassignedOpen":1} but received {"total":6,"open":4,"done":2,"highRiskOpen":2,"unassignedOpen":0}
+
+STAGE 3: EXPECTED SUMMARY CORRECTED
+PASS required starter files exist
+PASS task data parses as JSON
+PASS task data matches the schema
+PASS summary matches expected output
+PASS filters combine status and risk
+PASS page exposes accessible landmarks
+PASS page loads local assets
+PASS runtime files contain no network or credential markers
+
+8 checks passed.
+
+DEPENDENCY EXAMPLE: MALFORMED TASK-DATA JSON
+PASS required starter files exist
+FAIL task data parses as JSON
+SKIP: task data unavailable - task data matches the schema
+SKIP: task data unavailable - summary matches expected output
+SKIP: task data unavailable - filters combine status and risk
+PASS page exposes accessible landmarks
+PASS page loads local assets
+PASS runtime files contain no network or credential markers
+
+task data parses as JSON: invalid task-data JSON near starter/index.html line
+76, column 101: Bad control character in string literal in JSON at position
+430 (line 6 column 101)
+3 dependent checks skipped.

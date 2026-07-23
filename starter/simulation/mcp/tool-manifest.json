@@ -1,0 +1,29 @@
+{
+  "simulationOnly": true,
+  "server": "synthetic-task-reader",
+  "dataDirection": "reads supplied synthetic tasks; no writes",
+  "tools": [
+    {
+      "name": "list_tasks",
+      "description": "Return synthetic tasks filtered by status and risk.",
+      "input": {
+        "status": ["all", "backlog", "in-progress", "done"],
+        "risk": ["all", "low", "medium", "high"]
+      },
+      "annotations": {
+        "readOnlyHint": true
+      }
+    },
+    {
+      "name": "send_task_digest",
+      "description": "Proposed write-capable tool; intentionally not approved.",
+      "input": {
+        "destination": "string"
+      },
+      "annotations": {
+        "readOnlyHint": false
+      }
+    }
+  ],
+  "warning": "Annotations describe intent; permissions and server behavior must still be verified."
+}

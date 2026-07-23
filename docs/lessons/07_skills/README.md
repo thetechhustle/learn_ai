@@ -1,8 +1,8 @@
 # Chapter 7: Skills — Teach Your Agent Your Moves
 
-Custom commands gave your routines names. **Skills** go further: they package know-how — instructions, reference files, examples, even scripts — into a capability your agent loads *when the situation calls for it*. Write one well and you've effectively trained your agent in your way of doing something, permanently, shareably.
+Custom commands gave your routines names. **Skills** go further: they package know-how — instructions, reference files, examples, even scripts — into a versioned capability your agent can load *when the situation calls for it*. A Skill remains reusable and shareable while it is installed, compatible, and maintained.
 
-This is the first pillar of what the industry calls agentic engineering (the same material the premium cohorts teach), and it's where your agent stops being a talented generalist and starts being *your* specialist.
+This is one practice used in agentic engineering: giving a general-purpose agent a reviewable procedure for a recurring task.
 
 !!! abstract "What you will learn"
     - Explain what a Skill is, how it differs from commands and CLAUDE.md, and when each wins.
@@ -19,7 +19,7 @@ This is the first pillar of what the industry calls agentic engineering (the sam
 
 ## Real talk
 
-Think about the best person you've ever worked with — the one whose checklist, template, or way-of-doing-the-thing you copied. Their superpower wasn't just doing the work; it was that their know-how *survived being written down*. Skills are that, for the agentic era. The people quietly building libraries of them right now are the ones whose leverage will look unfair in two years.
+A useful checklist or template lets someone else inspect and repeat a procedure. Skills apply that idea to agent instructions, references, and scripts. Their value must be demonstrated through repeatable use and maintenance, not assumed from the size of a library.
 
 <!-- lesson-index:start -->
 

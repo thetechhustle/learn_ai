@@ -1,0 +1,30 @@
+{
+  "simulationOnly": true,
+  "rules": [
+    {
+      "event": "PreToolUse",
+      "match": "write path equals .env",
+      "outcome": "block",
+      "reason": "Credential files are outside this exercise."
+    },
+    {
+      "event": "PostToolUse",
+      "match": "edit under starter",
+      "outcome": "verify after action",
+      "reason": "Request the existing verifier after a starter edit."
+    },
+    {
+      "event": "Stop",
+      "match": "agent prepares to stop",
+      "outcome": "verify after action",
+      "reason": "Check reported work before accepting the turn."
+    },
+    {
+      "event": "SessionEnd",
+      "match": "session process ends",
+      "outcome": "record",
+      "reason": "SessionEnd is distinct from Stop and may record cleanup evidence."
+    }
+  ],
+  "warning": "This fixture describes outcomes; it is not an installable Claude Code settings file."
+}

@@ -7,9 +7,9 @@ By the end of this chapter, the terminal stops being the hacker screen from the 
 Engineers: skim 3.1–3.3 at speed, but do run 3.4 and 3.5 — the session habits there are the foundation Chapters 4–10 build on.
 
 !!! abstract "What you will learn"
-    - Move around the terminal with the six commands that cover 90% of daily use.
+    - Move around the terminal with a small set of common inspection and navigation commands.
     - Understand files, folders, and paths the way the machine does.
-    - Use Git as your undo button: init, add, commit, restore.
+    - Use Git to checkpoint, compare, and selectively restore tracked files.
     - Run your first full Claude Code session — brief, watch, review, commit.
     - Adopt session safety habits and recognize what Git can and cannot recover.
 

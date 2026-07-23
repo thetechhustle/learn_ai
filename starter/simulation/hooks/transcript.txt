@@ -1,0 +1,21 @@
+SIMULATED HOOK RECORD - no hook was installed
+
+1. PreToolUse write .env
+   BLOCK - credential path is outside the exercise.
+
+2. PreToolUse write starter/index.html
+   ALLOW - no block rule matches. Permission and human review still apply.
+
+3. PostToolUse edit starter/index.html
+   VERIFY AFTER ACTION - request the starter verifier.
+
+4. Stop: agent reports change complete
+   VERIFY AFTER ACTION - compare status, diff, tests, and human checks before
+   accepting the turn. Stop is not the end of the terminal session.
+
+5. SessionEnd: user exits
+   RECORD - preserve the final evidence reference. This event does not replace
+   the earlier Stop quality gate.
+
+A pass means only that the defined rule ran and allowed the observed input. It
+does not prove correctness, safety of unmodeled actions, or human acceptance.

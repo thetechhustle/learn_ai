@@ -1,0 +1,10 @@
+{
+  "simulationOnly": true,
+  "events": [
+    {"event": "PreToolUse", "action": "write", "path": ".env"},
+    {"event": "PreToolUse", "action": "write", "path": "starter/index.html"},
+    {"event": "PostToolUse", "action": "edit", "path": "starter/index.html"},
+    {"event": "Stop", "reportedResult": "change complete"},
+    {"event": "SessionEnd", "reason": "user exited"}
+  ]
+}

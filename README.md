@@ -42,11 +42,17 @@
 
 ## For the culture 🔥
 
-If you've been **watching the AI wave from the shore** — seeing other people ship apps, automate their hustle, and level up their careers while you're still copy-pasting into a chatbot — this course was built with you in mind.
+If you use AI in a chat window and want to test tool-using agents on bounded,
+reviewable work, this course was built with you in mind.
 
-Agentic AI is the biggest skill shift since the internet went mainstream. It's the difference between people who *use* AI and people who **direct** it — who turn ideas into products, side hustles into businesses, and job descriptions into leverage.
+Agent tools add files, commands, services, and multi-step execution to language
+models. That can make useful work possible and can create new failure, privacy,
+security, and operating risks. The course teaches you to direct and evaluate that
+work without promising a business or career outcome.
 
-The expensive cohorts assume you already write code. The YouTube rabbit hole assumes you have infinite time. This is neither. This is a **complete, structured, two-lane path** from zero to shipping — whether you've never opened a terminal or you've been an engineer for a decade. Free, forever, open source.
+This is a structured, two-lane path with a beginner route and a deeper engineer
+route. The repository is currently free to access and licensed under MIT; future
+hosting, third-party tools, accounts, and service plans can have separate costs.
 
 > **The Tech Hustle** is about closing the knowledge gap. We build what should have already existed.
 
@@ -56,11 +62,11 @@ The expensive cohorts assume you already write code. The YouTube rabbit hole ass
 
 | If you are... | This course gives you... |
 |---|---|
-| 🌱 **Curious, not technical** | A no-code lane from zero — every concept introduced before it's used |
-| 💼 **Creator / entrepreneur** | The ability to build and ship your own ideas without hiring a dev team |
+| 🌱 **Curious, not technical** | A supported beginner lane with setup, simulation, vocabulary, and recovery paths |
+| 💼 **Creator / entrepreneur** | A process for testing a bounded idea before deciding what expert help it needs |
 | 👩‍💻 **Software engineer** | The full agentic stack — context engineering, Skills, MCP, hooks, agent teams |
-| 📊 **Data / IT / ops professional** | Agent direction skills that multiply what you already know |
-| 🚀 **Career switcher** | A portfolio of shipped, verifiable projects — receipts, not certificates |
+| 📊 **Data / IT / ops professional** | Agent direction and trust-boundary practice grounded in existing domain knowledge |
+| 🚀 **Career switcher** | Reviewable project evidence to compare with actual role requirements |
 
 **No coding experience required for the no-code lane.** If you can type in a browser and follow a recipe, you're ready.
 
@@ -68,13 +74,16 @@ The expensive cohorts assume you already write code. The YouTube rabbit hole ass
 
 ## 🧠 The Builder Loop
 
-Every lesson trains the same five-step habit that separates directors from spectators:
+Every lesson uses the same five-step practice:
 
 ```
 Vision  →  Context  →  Build  →  Verify  →  Ship
 ```
 
-You will not just prompt and pray. You will **decide what done looks like**, engineer the context your agent needs, direct the build, verify the result with your own eyes, and put real work in front of real people. That habit is what gets you paid — and keeps you trusted.
+You will **decide what done looks like**, engineer the needed context, direct a
+bounded build, verify it with relevant human and automated checks, and choose a
+public or private review surface. Those are inspectable practices, not a guarantee
+of trust, payment, employment, or product success.
 
 ---
 
@@ -127,15 +136,17 @@ You will not just prompt and pray. You will **decide what done looks like**, eng
 
 ## ⏱️ Time Commitment
 
-| Goal | Estimate |
-|---|---|
-| Single lesson | 15–35 minutes |
-| Full chapter | 1.5–4 hours |
-| Complete reading path | 35–55 hours |
-| Hands-on labs | Additional time; several run across days or weeks |
-| Capstone project | Commonly +8–20 hours, depending on scope and review |
+| Route | Included work | Planning range |
+|---|---|---:|
+| Reading/reference | 54 lessons and unscored understanding questions | 12–18 hours |
+| Assessed practice | Reading, setup or simulation, diagnostics, essential practice, 11 checkpoints, scoring, and revision | 30–50 hours |
+| Assessed practice + capstone | Assessed route plus a scoped capstone and peer review | 40–75+ hours |
 
-Move at your own pace. Engineers can clear Track 1 in an evening. If you're brand new, take your time — the foundations carry everything else. There are no gates.
+Videos, repeated "Try it now" builds, extra tool experiments, and portfolio polish
+are optional extensions and commonly add 15–30+ hours. These ranges are planning
+estimates from the July 23, 2026 course inventory, not finish-time or outcome
+promises. See the [course overview](https://thetechhustle.github.io/learn_ai/course/overview/#time-expectations-and-routes)
+for route definitions and pause points.
 
 ---
 
@@ -196,7 +207,9 @@ When you reach the end, the [capstone](https://thetechhustle.github.io/learn_ai/
 - Verify the work end-to-end — on a device that isn't yours, for a person that isn't you
 - Produce a handoff document and a build log with usage evidence and honest cost estimates
 
-No submission. No grading. It's proof to yourself — and a portfolio piece with receipts you can show anyone.
+No central submission is required. Use the rubric and a peer review to produce
+evidence you can inspect and selectively share. Private, authenticated, recorded,
+or synthetic delivery is valid when public release would be unsafe or inappropriate.
 
 ---
 
@@ -204,7 +217,12 @@ No submission. No grading. It's proof to yourself — and a portfolio piece with
 
 > An AI agent can create, modify, and delete real files and run real commands. That's the power — and the risk.
 
-Every lab in this course happens inside a **dedicated projects folder under version control**, and the verify step is built into every lesson. Git protects tracked files within a defined boundary; permissions, sandboxes, scoped credentials, and service-specific recovery cover other effects. [Setup](https://thetechhustle.github.io/learn_ai/course/setup/) usually takes 45–60 minutes.
+Hands-on repository labs use a **dedicated projects folder under version
+control**; the no-install lane uses supplied simulation artifacts. Git protects
+tracked history within its scope. Permissions, sandboxes, backups, scoped
+credentials, and service-specific recovery address different effects.
+[Setup](https://thetechhustle.github.io/learn_ai/course/setup/) commonly takes
+45–60 minutes before troubleshooting or account recovery.
 
 ---
 

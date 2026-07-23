@@ -1,6 +1,6 @@
 # Chapter 6: Everyday Workflows — Build Real Things
 
-Foundations: locked. Context: engineered. This chapter is the payoff lap — the workflows you'll run hundreds of times: driving sessions efficiently with slash commands, taking an idea to a live site in an afternoon, debugging without dread, and pointing the same loop at everything in your life that isn't code — writing, research, planning, admin.
+This chapter applies the foundations and context work to repeatable workflows: driving sessions with controls, taking an idea to a reviewable site, debugging systematically, and applying the same loop to writing, research, planning, and administration.
 
 This is also where your Lesson 1.4 build list stops being a list.
 

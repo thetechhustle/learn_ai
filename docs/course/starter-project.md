@@ -7,6 +7,53 @@ behavior, data, styling, and tests to work with.
 The project lives in `starter/`. It uses synthetic data, needs no secrets,
 makes no network requests, and opens directly from `starter/index.html`.
 
+## Find and open the project
+
+You must be at the course repository root, not merely inside a folder named
+`starter`. If you do not have the files yet, follow
+[Setup: Get the course files](setup.md#6-get-the-course-files).
+
+=== "Mac"
+
+    ```console
+    $ cd ~/builds/learn_ai
+    $ ls -l mkdocs.yml starter/verify.js
+    $ open starter/index.html
+    ```
+
+=== "Linux"
+
+    ```console
+    $ cd ~/builds/learn_ai
+    $ ls -l mkdocs.yml starter/verify.js
+    $ xdg-open starter/index.html
+    ```
+
+=== "WSL"
+
+    ```console
+    $ cd ~/builds/learn_ai
+    $ ls -l mkdocs.yml starter/verify.js
+    $ explorer.exe starter/index.html
+    ```
+
+=== "Windows PowerShell"
+
+    ```powershell
+    Set-Location (Join-Path $HOME "builds\learn_ai")
+    Test-Path .\mkdocs.yml
+    Test-Path .\starter\verify.js
+    Invoke-Item .\starter\index.html
+    ```
+
+The file checks must succeed before you continue. To edit, run `code .` if
+Visual Studio Code is installed, or use the exact editor steps in Setup.
+
+No Node, Git, install permission, or eligible account? Use the complete
+[Simulation Path](simulation-path.md). It uses the same synthetic task and
+assessment goals without pretending that a prerecorded exercise is a live
+agent session.
+
 ## Baseline
 
 Before changing anything:
@@ -16,15 +63,18 @@ Before changing anything:
    **1 unassigned open**.
 3. Set Status to **In progress** and Risk to **High**. Only task `T-105` should
    remain.
-4. Run:
+4. If Node is available, run:
 
-    ```console
-    $ node starter/verify.js
-    ```
+    === "Mac, Linux, WSL, or PowerShell"
+
+        ```console
+        node starter/verify.js
+        ```
 
 The result should end with `8 checks passed.` This is the deterministic
 baseline: the browser view is the human check and the script is the machine
-check.
+check. Without Node, compare the supplied before/after records in the
+[Simulation Path](simulation-path.md) and label that evidence as simulated.
 
 !!! note "Commands in this guide"
     Commands assume you are at the repository root. If your terminal prompt is
@@ -40,7 +90,8 @@ check.
     2. Find the task with ID `T-104`.
     3. Change its empty owner from `"owner":""` to `"owner":"You"`.
     4. Save, refresh the browser, and confirm the task shows **You**.
-    5. Run `node starter/verify.js`.
+    5. Run `node starter/verify.js`, or use the simulation verifier transcript
+       when Node is unavailable.
 
     The verifier will now report that the expected summary is stale because
     **Unassigned open** changed from 1 to 0. That failure is useful evidence.

@@ -18,6 +18,11 @@ Read the first useful error, not just the last line. Copy the command, error,
 and current `git status --short` into your project journal before changing
 anything else.
 
+If the task-data JSON cannot be parsed, the verifier reports its approximate
+line and column and marks the schema, summary, and filter checks
+`SKIP: task data unavailable`. Those skips are one dependency failure, not
+three new defects. Repair the parse error first, then rerun all checks.
+
 !!! warning "Protect work Git does not track"
     Git cannot restore untracked or ignored files, browser state, databases,
     external services, or overwritten secrets. Before recovery, copy any
@@ -109,6 +114,25 @@ If this is a downloaded clean copy rather than a Git checkout:
 
 Keeping the broken copy preserves evidence and prevents an attempted recovery
 from becoming permanent data loss.
+
+## Recover in the simulation path
+
+If you cannot run Git or Node, use the supplied evidence without claiming live
+execution:
+
+1. Preserve your written decision before opening the answer artifact.
+2. Compare `starter/simulation/before/task-data.json` with
+   `starter/simulation/after/task-data.json`.
+3. Use `starter/simulation/changes.patch` to identify the exact changed lines.
+4. Compare your predicted verifier result with
+   `starter/simulation/verifier-transcript.txt`.
+5. Record which artifact you inspected and mark the result **simulated**, not
+   machine-executed by you.
+
+Return to the clean `before` artifact to reset the exercise. This rehearses
+diagnosis and evidence review; it does not demonstrate command execution or
+live system recovery. The full sequence is in the
+[Simulation Path](simulation-path.md).
 
 ## Ask for useful agent help
 

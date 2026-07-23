@@ -1,18 +1,20 @@
 # Chapter 11: Ship It and Sell It
 
-The last chapter is about the outside world: getting your work in front of real people, running it like a professional, pricing the machine that makes it, and turning everything you've built into money, opportunity, or both. Then the capstone — where you prove the whole course to the only judge that matters.
-
-This is also the chapter the culture needed most. Plenty of courses teach tools. Almost none teach the part where you *get paid*.
+The last chapter is about delivery: choosing a public or private review surface,
+operating what you ship, measuring costs, and testing a commercial or career
+hypothesis when that goal fits. Then the capstone combines the course into one
+reviewable body of evidence.
 
 !!! abstract "What you will learn"
-    - Deploy beyond GitHub Pages: the modern hosting landscape, still mostly free.
+    - Evaluate deployment beyond GitHub Pages using current terms and costs.
     - Run production like a pro: monitoring, updates, and the boring reliability habits.
     - Manage costs and model choices — the economics of running an agentic practice.
-    - Turn skills into income: freelance, products, or career leverage — with real first steps.
+    - Test a freelance, product, or career hypothesis without promising an outcome.
     - Stay current in a field that moves monthly, without drowning in it.
 
 !!! success "Builder principle"
-    Shipped and imperfect beats polished and private. Sold and useful beats shipped and ignored. Move down the funnel.
+    Choose a delivery surface that fits the user, evidence, privacy boundary, and
+    support capacity. Public release and commercial use are options, not proof.
 
 !!! example "Watch with this chapter"
     - [How I use LLMs](https://www.youtube.com/watch?v=EWvNQjAaOHw) — Karpathy. Final rewatch, full circle: you now *do* everything he demonstrates, plus the agentic layer he only gestures at.

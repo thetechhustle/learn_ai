@@ -1,6 +1,9 @@
 # Competency Framework
 
-The entry and exit diagnostics assess the same eight competencies on the same four-level scale. Chapter tasks provide repeated evidence along the way.
+The entry and exit diagnostics assess the same eight competencies on the same
+four-level scale through different, paired situations. Chapter tasks provide
+repeated evidence along the way. See the one-page [Scoring Guide](scoring-guide.md)
+for the diagnostic, checkpoint, and capstone scales and how they relate.
 
 ## Level scale
 
@@ -79,9 +82,23 @@ A polished artifact is not automatically Level 3. A plain artifact with strong j
 | 10 | C7 | C2, C3, C4 |
 | 11 | C8 | C4, C6, C7 |
 
+**Primary** means the chapter checkpoint is deliberately designed to produce
+evidence for that competency. **Reinforced** means the chapter practices it and
+may produce usable evidence, but the checkpoint does not guarantee that every
+anchor is visible. Record directly observed evidence for primary competencies.
+Update a reinforced competency only when the artifact demonstrates its anchor and
+the scorer records why. Do not infer competency from the chapter number or total
+task score.
+
 ## What scores mean
 
-The diagnostic maximum is 24 points: eight competencies multiplied by three. Total score is useful for a broad snapshot, but the eight competency scores are the actionable result. Two learners with 15 points may need entirely different practice.
+The diagnostic maximum is 24 points: eight competencies multiplied by three.
+The entry and exit totals are comparable because both use this scale, but their
+situations differ. Chapter checkpoints use a separate 12-point task rubric and
+the capstone uses a separate 14-point evidence rubric; do not average or convert
+those totals. Diagnostic total is useful for a broad snapshot, but the eight
+competency scores are the actionable result. Two learners with 15 points may need
+entirely different practice.
 
 | Total | Interpretation |
 | --- | --- |

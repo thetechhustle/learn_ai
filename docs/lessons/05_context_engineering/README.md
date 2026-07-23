@@ -1,6 +1,6 @@
 # Chapter 5: Context Engineering
 
-Here's the open secret of the agentic era: the people getting jaw-dropping results and the people getting mid results are using the *same models*. The difference is what the model gets to see. Context engineering — deliberately designing what's in front of the agent — is the highest-leverage skill in this entire course, and this chapter is its home.
+The same model can behave differently when its instructions, evidence, examples, and constraints change. Context engineering deliberately designs that task packet, while model capability, tools, and verification remain separate factors.
 
 You'll build a CLAUDE.md that turns your agent from tourist to teammate, layer memory so nothing gets re-explained twice, grow a second brain your agent can read, and manage sessions so quality doesn't sag as work gets long. The reference points here are the same ones the top engineering teams use — translated for both lanes.
 
@@ -21,7 +21,7 @@ You'll build a CLAUDE.md that turns your agent from tourist to teammate, layer m
 
 ## Real talk
 
-In Lesson 4.5's retro you wrote down what your agent needed but didn't have. Multiply that by every session you'll ever run — that's the invisible tax of unengineered context. This chapter deletes the tax. It's also the chapter where engineers who "already use AI" usually realize what they've been leaving on the table.
+In Lesson 4.5's retro you wrote down what your agent needed but did not have. Repeated missing context creates repeated clarification and rework. This chapter shows how to reduce that cost and measure whether the change helps.
 
 <!-- lesson-index:start -->
 

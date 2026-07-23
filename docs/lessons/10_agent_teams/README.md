@@ -1,12 +1,12 @@
 # Chapter 10: Agent Teams — Multi-Agent Orchestration
 
-One agent made you faster. This chapter makes you *plural*. Subagents that investigate in their own context and report back. Worktrees that let three builds run in the same repo at once. Teams of agents splitting a feature like a crew splits a job site. And the mindset shift that holds it together: you're not the fastest worker in the room anymore — you're the one running the room.
+This chapter examines when plural workflows help: subagents that investigate in separate context, worktrees that separate tracked-file lanes, and roles that split bounded ownership. Parallelism adds coordination and shared-resource risk, so the chapter treats one agent or sequential work as valid outcomes.
 
 This is the summit of the technical stack, the material the $500 cohorts save for their finale — and every piece of it stands on things you already own: context discipline (5), scoped briefs (2.3), verification you don't have to remember (9).
 
 !!! abstract "What you will learn"
     - Delegate to subagents: isolated context, specialized roles, clean reports back.
-    - Run parallel development with Git worktrees — multiple agents, one repo, zero collisions.
+    - Use Git worktrees to separate tracked-file lanes, then manage integration and shared-resource conflicts.
     - Orchestrate agent teams on real features: split, brief, integrate, review.
     - Assemble the full agentic harness — the machine that makes all of it trustworthy.
     - Operate as the orchestrator: allocation, review altitude, and knowing when one agent is plenty.

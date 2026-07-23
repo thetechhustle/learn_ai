@@ -7,6 +7,7 @@ var tools = require("./task-tools.js");
 var root = __dirname;
 var failures = [];
 var passed = 0;
+var skipped = 0;
 
 function check(name, test) {
   try {
@@ -26,13 +27,55 @@ function read(relativePath) {
   return fs.readFileSync(path.join(root, relativePath), "utf8");
 }
 
+function taskDataLocation(source, error, startingLine) {
+  var positionMatch = String(error.message).match(/position\s+(\d+)/i);
+  var lineMatch = String(error.message).match(/line\s+(\d+)\s+column\s+(\d+)/i);
+  var position;
+  var prefix;
+  var line;
+
+  if (lineMatch) {
+    return "starter/index.html line " +
+      (startingLine + Number(lineMatch[1]) - 1) + ", column " + lineMatch[2];
+  }
+  if (!positionMatch) {
+    return "inside the task-data block";
+  }
+
+  position = Number(positionMatch[1]);
+  prefix = source.slice(0, position);
+  line = prefix.split("\n");
+  return "starter/index.html line " + (startingLine + line.length - 1) +
+    ", column " + (line[line.length - 1].length + 1);
+}
+
 function parseTasks() {
   var html = read("index.html");
   var match = html.match(/<script id="task-data" type="application\/json">([\s\S]*?)<\/script>/);
+  var taskDataOffset;
+  var startingLine;
   if (!match) {
     throw new Error("index.html is missing the task-data JSON block");
   }
-  return JSON.parse(match[1]);
+  taskDataOffset = match.index + match[0].indexOf(match[1]);
+  startingLine = html.slice(0, taskDataOffset).split("\n").length;
+  try {
+    return JSON.parse(match[1]);
+  } catch (error) {
+    throw new Error(
+      "invalid task-data JSON near " +
+      taskDataLocation(match[1], error, startingLine) + ": " + error.message
+    );
+  }
+}
+
+function checkTaskData(name, test) {
+  if (!Array.isArray(tasks)) {
+    skipped += 1;
+    process.stdout.write("SKIP: task data unavailable - " + name + "\n");
+    return;
+  }
+  check(name, test);
 }
 
 check("required starter files exist", function requiredFilesExist() {
@@ -56,14 +99,14 @@ check("task data parses as JSON", function taskDataParses() {
   return Array.isArray(tasks);
 });
 
-check("task data matches the schema", function taskDataIsValid() {
+checkTaskData("task data matches the schema", function taskDataIsValid() {
   var errors = tools.validateTasks(tasks);
   if (errors.length > 0) {
     throw new Error(errors.join(" "));
   }
 });
 
-check("summary matches expected output", function summaryMatches() {
+checkTaskData("summary matches expected output", function summaryMatches() {
   var actual = tools.summarizeTasks(tasks);
   var expected = JSON.parse(read("expected/summary.json"));
   if (JSON.stringify(actual) !== JSON.stringify(expected)) {
@@ -73,7 +116,7 @@ check("summary matches expected output", function summaryMatches() {
   }
 });
 
-check("filters combine status and risk", function filtersCompose() {
+checkTaskData("filters combine status and risk", function filtersCompose() {
   var filtered = tools.filterTasks(tasks, {status: "in-progress", risk: "high"});
   if (filtered.length !== 1 || filtered[0].id !== "T-105") {
     throw new Error("expected only T-105");
@@ -119,7 +162,10 @@ check("runtime files contain no network or credential markers", function runtime
 });
 
 if (failures.length > 0) {
-  process.stderr.write("\n" + failures.join("\n") + "\n");
+  process.stderr.write(
+    "\n" + failures.join("\n") +
+    (skipped > 0 ? "\n" + skipped + " dependent checks skipped.\n" : "\n")
+  );
   process.exitCode = 1;
 } else {
   process.stdout.write("\n" + passed + " checks passed.\n");

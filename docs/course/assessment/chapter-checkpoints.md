@@ -7,15 +7,17 @@ Complete one task after every chapter. Each task should leave a small artifact t
 1. Choose the no-code or engineer lane. You may switch lanes between chapters.
 2. Use only public, synthetic, or explicitly authorized data.
 3. Save the required evidence in the matching assessment folder.
-4. Score the artifact with the [universal task rubric](answer-key.md#universal-performance-task-rubric) and the chapter evidence standard.
-5. Ask a peer to review at least one task per track: Chapters 1–3, 4–6, 7–9, and 10–11.
-6. Record one revision made because of a failed check or feedback.
+4. Use the public [Scoring Guide](scoring-guide.md) criteria, then save the first attempt before opening worked chapter patterns.
+5. Record whether worked patterns were viewed before the attempt: `yes / no / unsure`.
+6. Continue through [Finish and Save Before Review](review-after-attempt.md), self-score, and ask a peer to review at least one task per track: Chapters 1–3, 4–6, 7–9, and 10–11.
+7. Record one revision made because of a failed check or feedback.
 
 No live service is required. A local artifact, screen recording, annotated mockup, or written simulation is valid when it shows the requested competency.
 
 ## Chapter 1 — Opportunity without hype
 
-**Primary competencies:** C1, C2  
+**Primary competencies:** C1, C2
+**Reinforced competencies:** C8
 **Task:** Select one possible build from your life or work. Produce a one-page opportunity brief that distinguishes a chatbot response from agentic work and narrows the idea to a seven-day experiment.
 
 === "No-code lane"
@@ -38,7 +40,8 @@ No live service is required. A local artifact, screen recording, annotated mocku
 
 ## Chapter 2 — Predict the failure
 
-**Primary competencies:** C1, C2  
+**Primary competencies:** C1, C2
+**Reinforced competencies:** C4, C6
 **Task:** Design two delegations for the same outcome: one low-stakes and one higher-stakes. Predict how model behavior, context, and tools could create errors, then scale verification accordingly.
 
 === "No-code lane"
@@ -61,7 +64,8 @@ No live service is required. A local artifact, screen recording, annotated mocku
 
 ## Chapter 3 — Recoverable first session
 
-**Primary competencies:** C3, C4  
+**Primary competencies:** C3
+**Reinforced competencies:** C4
 **Task:** Run or simulate a small agent-assisted edit inside a disposable project and produce a preflight-to-recovery record.
 
 === "No-code lane"
@@ -84,7 +88,8 @@ No live service is required. A local artifact, screen recording, annotated mocku
 
 ## Chapter 4 — Builder Loop with a caught failure
 
-**Primary competencies:** C4, C2  
+**Primary competencies:** C4
+**Reinforced competencies:** C2, C3
 **Task:** Take a small artifact through vision, context, build, verify, and ship to a review surface. Intentionally include or ask a peer to introduce one harmless defect, then catch it.
 
 === "No-code lane"
@@ -107,7 +112,8 @@ No live service is required. A local artifact, screen recording, annotated mocku
 
 ## Chapter 5 — Context experiment
 
-**Primary competencies:** C5, C4  
+**Primary competencies:** C5
+**Reinforced competencies:** C2, C4
 **Task:** Run the same bounded request twice: first without project-specific persistent context, then in a fresh session with a deliberately designed context file. Compare behavior.
 
 === "No-code lane"
@@ -130,7 +136,8 @@ No live service is required. A local artifact, screen recording, annotated mocku
 
 ## Chapter 6 — Reusable real-work workflow
 
-**Primary competencies:** C4, C2, C8  
+**Primary competencies:** C4
+**Reinforced competencies:** C2, C5, C8
 **Task:** Build one useful workflow and run it twice on different inputs. The second run should require less re-explanation while preserving human review.
 
 === "No-code lane"
@@ -153,7 +160,8 @@ No live service is required. A local artifact, screen recording, annotated mocku
 
 ## Chapter 7 — Skill that earns reuse
 
-**Primary competencies:** C5, C7  
+**Primary competencies:** C5
+**Reinforced competencies:** C4, C7
 **Task:** Package a repeated workflow as a Skill or equivalent reusable agent instruction, test invocation and non-invocation cases, and revise it.
 
 === "No-code lane"
@@ -176,7 +184,8 @@ No live service is required. A local artifact, screen recording, annotated mocku
 
 ## Chapter 8 — Least-privilege connection decision
 
-**Primary competencies:** C6, C3  
+**Primary competencies:** C6
+**Reinforced competencies:** C3, C8
 **Task:** Compare an MCP server, a CLI or API, and a manual/export approach for one workflow. Safely test the chosen approach or produce an executable test plan.
 
 === "No-code lane"
@@ -199,7 +208,8 @@ No live service is required. A local artifact, screen recording, annotated mocku
 
 ## Chapter 9 — Guardrail that proves itself
 
-**Primary competencies:** C7, C3, C4  
+**Primary competencies:** C7
+**Reinforced competencies:** C3, C4, C6
 **Task:** Replace one remembered quality or safety rule with an automatic mechanism, then prove both pass and fail behavior.
 
 === "No-code lane"
@@ -222,7 +232,8 @@ No live service is required. A local artifact, screen recording, annotated mocku
 
 ## Chapter 10 — Parallel only when justified
 
-**Primary competencies:** C7, C2, C3, C4  
+**Primary competencies:** C7
+**Reinforced competencies:** C2, C3, C4
 **Task:** Plan and run a two-lane agent or human-plus-agent workflow, or demonstrate through dependency analysis that sequential work is the better design.
 
 === "No-code lane"
@@ -245,7 +256,8 @@ No live service is required. A local artifact, screen recording, annotated mocku
 
 ## Chapter 11 — Evidence-backed launch
 
-**Primary competencies:** C8, C4, C6  
+**Primary competencies:** C8
+**Reinforced competencies:** C4, C6, C7
 **Task:** Prepare and execute a low-risk launch or private demonstration with an operations and value evidence pack.
 
 === "No-code lane"
@@ -284,3 +296,6 @@ Record:
 - **Revision made:**
 - **What I can now do without coaching:**
 - **What still requires a reference or reviewer:**
+- **Worked patterns viewed before first attempt:** yes / no / unsure
+- **Primary competency evidence recorded:**
+- **Reinforced competency evidence recorded, if directly observed:**

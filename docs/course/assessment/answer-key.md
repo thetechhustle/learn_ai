@@ -1,6 +1,11 @@
 # Answer Key and Evidence Guide
 
-These are reference patterns, not single correct answers. Open-ended work can be effective in many forms. Score only what the learner’s evidence supports.
+These are reference patterns, not single correct answers. Open-ended work can be
+effective in many forms. Score only what the learner’s evidence supports.
+
+Open this page after completing the
+[Finish and Save Before Review](review-after-attempt.md) steps. If patterns were
+viewed early, disclose that exposure; do not claim an unexposed baseline.
 
 ## How to review fairly
 
@@ -76,27 +81,8 @@ Use the [Competency Framework](competency-framework.md#competencies-and-anchors)
 
 **Insufficient or risky:** public exposure as proof of shipping, publishing personal data, claiming error elimination, treating a free tier as permanent, or promising savings or income without measured evidence.
 
-## Universal performance-task rubric
-
-Score each dimension from 0–3. Maximum: 12 points.
-
-| Dimension | 0 — Missing or unsafe | 1 — Emerging | 2 — Capable | 3 — Adaptive |
-| --- | --- | --- | --- | --- |
-| Judgment and framing | No relevant outcome, or material risk ignored | Goal stated but scope, user, evidence, or tradeoff is vague | Bounded outcome, observable criteria, relevant constraints, and justified choice | Ambiguity and stakes are surfaced; alternatives, stop conditions, and portability are reasoned |
-| Execution and artifact | No usable artifact | Partial artifact or result depends on author coaching | Reproducible artifact satisfies the chapter evidence standard | Artifact handles an edge case and can be used or reviewed by another person without coaching |
-| Verification and safety | No check, or unsafe data/action | Appearance or agent self-report is the main check | Independent check plus relevant data, permission, provenance, and human-review controls | Seeded failure, limitation, recovery/escalation, and proportionate responsible-use evidence are shown |
-| Reflection and transfer | No reflection or unsupported claims | Describes activity rather than learning | Records feedback/failure, revision, limits, and one transferable principle | Compares alternatives, calibrates claims to evidence, and defines a specific next experiment |
-
-### Chapter task interpretation
-
-| Total | Interpretation |
-| --- | --- |
-| 0–3 | Rework before continuing if the gap involves unsafe action or data. |
-| 4–7 | Partial evidence. Revise the lowest dimension and ask for review. |
-| 8–10 | Capable chapter performance. Continue and carry the noted limitation forward. |
-| 11–12 | Adaptive evidence for this bounded task. Test the skill in a different domain before claiming transfer. |
-
-A task with **0 in Verification and safety cannot pass**, regardless of total. For Chapters 3, 8, 9, and 11, score below 2 in that dimension means the next attempt must remain disposable, synthetic, private, and supervised.
+The public [Scoring Guide](scoring-guide.md) contains the universal checkpoint
+rubric, score interpretation, and safety gate.
 
 ## Chapter answer and evidence patterns
 

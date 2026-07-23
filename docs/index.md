@@ -95,7 +95,7 @@ Data, IT, security, or ops background. Start at Chapter 2 to lock in the mental 
 1. Read the concept — plain language first, precision second.
 2. Watch the linked video if the idea is new to you.
 3. Run the guided build in your own workspace.
-4. Verify the result with your own eyes — never trust, always check.
+4. Verify the result with relevant human and automated checks.
 5. Complete the checkpoint questions and note what you'd do differently next time.
 
 !!! tip "New to all of this?"

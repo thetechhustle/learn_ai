@@ -85,18 +85,22 @@ nav:
   - Home: index.md
   - Course:
       - Overview: course/overview.md
-      - Entry and Exit Diagnostic: course/assessment/diagnostic.md
       - Setup: course/setup.md
       - Starter Project: course/starter-project.md
+      - No-Install Simulation Path: course/simulation-path.md
       - Recovery Guide: course/recovery-guide.md
       - Syllabus: course/syllabus.md
       - Assessments:
           - Assessment Overview: course/assessment/README.md
+          - Plain-Language Term Sheet: course/assessment/term-sheet.md
           - Competency Framework: course/assessment/competency-framework.md
+          - Scoring Guide: course/assessment/scoring-guide.md
+          - Entry and Exit Diagnostic: course/assessment/diagnostic.md
           - Chapter Checkpoints: course/assessment/chapter-checkpoints.md
-          - Answer Key and Rubrics: course/assessment/answer-key.md
+          - Finish and Save Before Review: course/assessment/review-after-attempt.md
       - Capstone: course/capstone.md
       - Course Maintenance: course/maintenance.md
+      - Simulated Pilot Report: course/pilot-report.md
       - Glossary: course/glossary.md
       - Join the Cohort: course/join.md
   - Lessons:

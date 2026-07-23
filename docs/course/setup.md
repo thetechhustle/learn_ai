@@ -8,7 +8,14 @@ Everything you need to run the labs in this course, usually in 45–60 minutes. 
 2. **Claude Code** and an account that includes access.
 3. **Git** and a free **GitHub** account (one layer of your safety net and portfolio).
 4. **Node.js LTS** for the `npx`-based MCP labs in Chapter 8.
-5. A dedicated **projects folder** so agent work stays away from personal files.
+5. A dedicated **projects folder** so the intended workspace is easy to identify.
+6. A local copy of this course and its synthetic starter project.
+
+!!! info "No install or paid access?"
+    You can complete the course's [Simulation Path](simulation-path.md) in a
+    browser from the supplied artifacts. It requires no Claude account, Git,
+    Node.js, or terminal. The simulation is a real analysis and decision-making
+    path, but it does not prove that you operated a live agent or integration.
 
 ## 1. Open your terminal
 
@@ -18,13 +25,21 @@ Everything you need to run the labs in this course, usually in 45–60 minutes. 
 
     **Windows:** Open PowerShell or Windows Terminal. Claude Code supports native Windows, so WSL is optional. Use WSL 2 if you want a Linux toolchain or Claude Code's Bash sandbox; native Windows is the simpler start for Windows-native projects.
 
-    Type this and press ++enter++ to prove you're alive:
+    Type the command for your terminal and press ++enter++:
 
-    ```console
-    $ echo "I'm here"
-    ```
+    === "Mac, Linux, or WSL"
 
-    If the terminal repeats it back, you're in business.
+        ```console
+        $ echo "I'm here"
+        ```
+
+    === "Windows PowerShell"
+
+        ```powershell
+        Write-Output "I'm here"
+        ```
+
+    If the terminal repeats it back, it is ready.
 
 === "⚙️ Engineer lane"
 
@@ -117,30 +132,200 @@ Choose HTTPS and follow the browser flow. If you cannot use `gh`, use GitHub's o
 
 Give every agent session a home that is **not** your Desktop, Documents, or anything precious:
 
-```console
-$ mkdir -p ~/builds
-$ cd ~/builds
-```
+=== "Mac, Linux, or WSL"
 
-Every lab in this course starts from `~/builds`. A dedicated folder plus Git narrows the workspace and checkpoints tracked files; it does not make external actions or untracked/ignored state automatically reversible.
+    ```console
+    $ mkdir -p ~/builds
+    $ cd ~/builds
+    ```
+
+=== "Windows PowerShell"
+
+    ```powershell
+    New-Item -ItemType Directory -Force -Path (Join-Path $HOME "builds")
+    Set-Location (Join-Path $HOME "builds")
+    ```
+
+Every lab starts from the `builds` folder in your home directory. A dedicated
+folder plus Git narrows the intended workspace and checkpoints tracked files;
+the folder is not an operating-system sandbox, and it does not make external
+actions or untracked/ignored state automatically reversible.
+
+## 6. Get the course files
+
+Choose **Git clone** if Git works on your machine. Choose **Download ZIP** if
+you cannot or do not want to use Git yet. Both routes produce a `learn_ai`
+folder inside `builds`.
+
+### Option A: clone with Git
+
+=== "Mac, Linux, or WSL"
+
+    ```console
+    $ cd ~/builds
+    $ git clone https://github.com/thetechhustle/learn_ai.git
+    $ cd learn_ai
+    ```
+
+=== "Windows PowerShell"
+
+    ```powershell
+    Set-Location (Join-Path $HOME "builds")
+    git clone https://github.com/thetechhustle/learn_ai.git
+    Set-Location .\learn_ai
+    ```
+
+### Option B: download a ZIP
+
+1. Open the [course repository](https://github.com/thetechhustle/learn_ai).
+2. Select **Code**, then **Download ZIP**.
+3. Use the commands for your operating system:
+
+=== "Mac"
+
+    Safari may expand the download automatically. If
+    `~/Downloads/learn_ai-main` exists, run:
+
+    ```console
+    $ mv ~/Downloads/learn_ai-main ~/builds/learn_ai
+    $ cd ~/builds/learn_ai
+    ```
+
+    If the `.zip` is still present, double-click it in Finder first.
+
+=== "Linux or WSL"
+
+    ```console
+    $ cd ~/builds
+    $ unzip ~/Downloads/learn_ai-main.zip
+    $ mv learn_ai-main learn_ai
+    $ cd learn_ai
+    ```
+
+    In WSL, a browser download may instead be under
+    `/mnt/c/Users/YOURNAME/Downloads`; replace the ZIP path accordingly.
+
+=== "Windows PowerShell"
+
+    ```powershell
+    Set-Location (Join-Path $HOME "builds")
+    Expand-Archive -LiteralPath (Join-Path $HOME "Downloads\learn_ai-main.zip") -DestinationPath . -Force
+    Rename-Item -Path .\learn_ai-main -NewName learn_ai
+    Set-Location .\learn_ai
+    ```
+
+### Prove you are at the repository root
+
+Do not continue until the current folder contains both `mkdocs.yml` and
+`starter/verify.js`.
+
+=== "Mac, Linux, or WSL"
+
+    ```console
+    $ pwd
+    $ ls -l mkdocs.yml starter/verify.js
+    $ ls starter
+    ```
+
+    The first `ls` command must print both named files.
+
+=== "Windows PowerShell"
+
+    ```powershell
+    Get-Location
+    Test-Path .\mkdocs.yml
+    Test-Path .\starter\verify.js
+    Get-ChildItem .\starter -Name
+    ```
+
+    Both `Test-Path` commands must print `True`.
+
+For a Git clone, `git rev-parse --show-toplevel` should also print a path ending
+in `learn_ai`. A ZIP has no Git history, so use the file checks instead.
+
+### Open the course and starter
+
+If Visual Studio Code is installed, run `code .` at the repository root on any
+platform. Otherwise:
+
+=== "Mac"
+
+    ```console
+    $ open starter/index.html
+    $ nano starter/index.html
+    ```
+
+    In `nano`, edit the text, press ++ctrl+o++ then ++enter++ to save, and
+    ++ctrl+x++ to exit.
+
+=== "Linux"
+
+    ```console
+    $ xdg-open starter/index.html
+    $ nano starter/index.html
+    ```
+
+    Use ++ctrl+o++, ++enter++, and ++ctrl+x++ to save and exit `nano`.
+
+=== "WSL"
+
+    ```console
+    $ explorer.exe starter/index.html
+    $ nano starter/index.html
+    ```
+
+    Use ++ctrl+o++, ++enter++, and ++ctrl+x++ to save and exit `nano`.
+
+=== "Windows PowerShell"
+
+    ```powershell
+    Invoke-Item .\starter\index.html
+    Start-Process notepad.exe .\starter\index.html
+    ```
+
+The browser should show the synthetic **Build With AI Task Dashboard**. Keep the
+editor and browser open, then continue to the [Starter Project](starter-project.md).
 
 ## Verify the full setup
 
-Run each line. Every one should answer without an error:
+Run the block for your operating system. Every installed tool should answer
+without an error:
 
-```console
-$ node --version
-$ npx --version
-$ git --version
-$ gh auth status
-$ claude --version
-$ ls ~/builds
-```
+=== "Mac, Linux, or WSL"
 
-All green? You're ready. Head to [Chapter 1](../lessons/01_the_shift/README.md) if you haven't read it, or straight to [Chapter 3](../lessons/03_command_center/README.md) to put the setup to work.
+    ```console
+    $ node --version
+    $ npx --version
+    $ git --version
+    $ gh auth status
+    $ claude --version
+    $ ls ~/builds/learn_ai/starter
+    ```
+
+=== "Windows PowerShell"
+
+    ```powershell
+    node --version
+    npx --version
+    git --version
+    gh auth status
+    claude --version
+    Get-ChildItem (Join-Path $HOME "builds\learn_ai\starter") -Name
+    ```
+
+All green? You're ready. If a paid account or install is unavailable, use the
+[Simulation Path](simulation-path.md) instead of treating setup as failed. Head
+to [Chapter 1](../lessons/01_the_shift/README.md) if you haven't read it, or
+straight to [Chapter 3](../lessons/03_command_center/README.md) to put the setup
+to work.
 
 ## Troubleshooting
 
 - **`command not found: claude`** — run `claude doctor` if available, then use the [official install troubleshooting guide](https://code.claude.com/docs/en/setup). For an npm installation, confirm Node 22+ and that npm's global bin directory is on `PATH`.
-- **Native Windows command differences** — the course examples use Unix-style commands. Git for Windows adds Git Bash; WSL 2 provides a fuller Linux environment and supports Bash sandboxing. Native PowerShell remains supported.
-- **Corporate machine** — if installs are blocked, use a personal machine. You need an environment you're allowed to experiment in.
+- **Native Windows command differences** — use the Windows PowerShell tabs in
+  Setup and Chapter 3. They work in Windows PowerShell 5.1 and do not rely on
+  Bash chaining. A lesson that requires Bash will say so explicitly; Git Bash
+  or WSL 2 are optional, not silent prerequisites.
+- **Corporate machine** — do not bypass organizational controls. If installs,
+  accounts, or payment are unavailable, complete the
+  [Simulation Path](simulation-path.md) with the supplied synthetic artifacts.

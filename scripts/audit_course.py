@@ -9,7 +9,7 @@ import re
 import sys
 import tempfile
 from dataclasses import asdict, dataclass
-from datetime import date, datetime, timedelta
+from datetime import date, datetime
 from pathlib import Path
 from typing import Iterable
 
@@ -29,9 +29,10 @@ class ExternalFact:
     path: str
     anchor: str
     last_reviewed: str
-    review_every_days: int
+    review_due: str
     owner: str
     evidence: tuple[str, ...]
+    evidence_record: str
     question: str
 
 
@@ -64,6 +65,7 @@ class FactStatus:
     owner: str
     question: str
     evidence: tuple[str, ...]
+    evidence_record: str
 
 
 RULES = (
@@ -160,9 +162,11 @@ EXTERNAL_FACTS = (
         "docs/course/setup.md",
         "recommends the native installer",
         "2026-07-23",
-        92,
+        "2026-10-01",
         "Course maintainer",
         ("https://code.claude.com/docs/en/setup",),
+        "https://github.com/thetechhustle/learn_ai/commit/"
+        "9e44a5f8648de809b51019db9fb3a14c68ac0fb3",
         "Are the recommended installers, supported platforms, account access, and npm "
         "fallback requirements still accurate?",
     ),
@@ -171,12 +175,14 @@ EXTERNAL_FACTS = (
         "docs/course/setup.md",
         "Use `/usage`",
         "2026-07-23",
-        92,
+        "2026-10-01",
         "Course maintainer",
         (
             "https://code.claude.com/docs/en/costs",
             "https://console.anthropic.com/settings/usage",
         ),
+        "https://github.com/thetechhustle/learn_ai/commit/"
+        "9e44a5f8648de809b51019db9fb3a14c68ac0fb3",
         "Does `/usage` still behave as described for subscriptions and API-backed use?",
     ),
     ExternalFact(
@@ -184,9 +190,11 @@ EXTERNAL_FACTS = (
         "docs/lessons/06_everyday_workflows/6.1_the_daily_drivers.md",
         "++esc+esc++ at an empty prompt",
         "2026-07-23",
-        92,
+        "2026-10-01",
         "Course maintainer",
         ("https://code.claude.com/docs/en/interactive-mode",),
+        "https://github.com/thetechhustle/learn_ai/commit/"
+        "9e44a5f8648de809b51019db9fb3a14c68ac0fb3",
         "Does the current checkpoint/rewind interaction still use double Escape?",
     ),
     ExternalFact(
@@ -194,13 +202,15 @@ EXTERNAL_FACTS = (
         "docs/lessons/08_mcp_connecting_tools/8.3_connecting_your_first_server.md",
         "@playwright/mcp@0.0.78",
         "2026-07-23",
-        92,
+        "2026-10-01",
         "Course maintainer",
         (
             "https://code.claude.com/docs/en/mcp",
             "https://www.npmjs.com/package/@playwright/mcp",
             "https://github.com/microsoft/playwright-mcp/releases",
         ),
+        "https://github.com/thetechhustle/learn_ai/commit/"
+        "300ad937199f231c82eafc12740115486c217d71",
         "Is the MCP CLI syntax still valid, and is the pinned Playwright MCP release "
         "still the version we have reviewed and tested?",
     ),
@@ -209,13 +219,15 @@ EXTERNAL_FACTS = (
         "docs/lessons/11_ship_and_sell/11.1_launch_beyond_github_pages.md",
         "Free-plan terms, quotas, data handling",
         "2026-07-23",
-        92,
+        "2026-10-01",
         "Course maintainer",
         (
             "https://vercel.com/docs/limits",
             "https://docs.netlify.com/manage/accounts-and-billing/billing/",
             "https://developers.cloudflare.com/workers/platform/limits/",
         ),
+        "https://github.com/thetechhustle/learn_ai/commit/"
+        "9e44a5f8648de809b51019db9fb3a14c68ac0fb3",
         "Do the named hosting platforms' current terms support every pricing, quota, "
         "data-handling, and commercial-use claim in the lesson?",
     ),
@@ -230,7 +242,7 @@ EXCEPTION_RE = re.compile(
 
 
 def course_files(root: Path) -> Iterable[Path]:
-    candidates = [root / "README.md", root / "mkdocs.yml"]
+    candidates = [root / "README.md", root / "mkdocs.yml", root / "starter/README.md"]
     candidates.extend(sorted((root / "docs").rglob("*.md")))
     workflows = root / ".github" / "workflows"
     if workflows.exists():
@@ -246,10 +258,27 @@ def scan_file(
     exceptions: list[ExceptionUse] = []
     pending: dict[str, tuple[str, date, str, int]] = {}
     relative = path.relative_to(root).as_posix()
+    lines = path.read_text(encoding="utf-8").splitlines()
 
-    for line_number, line in enumerate(
-        path.read_text(encoding="utf-8").splitlines(), start=1
-    ):
+    if relative.startswith("docs/lessons/"):
+        headings = (
+            (line_number, match)
+            for line_number, line in enumerate(lines, start=1)
+            if (match := re.match(r"^(#{1,6})\s+\S", line))
+        )
+        first_heading_line, first_heading = next(headings, (1, None))
+        if first_heading is None or first_heading.group(1) != "#":
+            findings.append(
+                Finding(
+                    "LESSON_FIRST_HEADING",
+                    relative,
+                    first_heading_line,
+                    "The first Markdown heading in a lesson file is not H1.",
+                    "Start the lesson with one `# Title`; use H2/H3 for subsections.",
+                )
+            )
+
+    for line_number, line in enumerate(lines, start=1):
         marker = EXCEPTION_RE.match(line)
         if marker:
             rule_id = marker.group("rule")
@@ -356,13 +385,13 @@ def check_facts(root: Path, as_of: date) -> list[FactStatus]:
     for fact in EXTERNAL_FACTS:
         path = root / fact.path
         last_reviewed = date.fromisoformat(fact.last_reviewed)
-        review_due = last_reviewed + timedelta(days=fact.review_every_days)
+        review_due = date.fromisoformat(fact.review_due)
         if not path.is_file() or fact.anchor not in path.read_text(encoding="utf-8"):
             status = "missing-anchor"
         elif as_of >= review_due:
             status = "review-due"
         else:
-            status = "current"
+            status = "review-recorded-not-reverified-offline"
         statuses.append(
             FactStatus(
                 fact.fact_id,
@@ -373,6 +402,7 @@ def check_facts(root: Path, as_of: date) -> list[FactStatus]:
                 fact.owner,
                 fact.question,
                 fact.evidence,
+                fact.evidence_record,
             )
         )
     return statuses
@@ -388,7 +418,7 @@ def audit(root: Path, as_of: date) -> dict[str, object]:
         exceptions.extend(file_exceptions)
     facts = check_facts(root, as_of)
     return {
-        "schema_version": 1,
+        "schema_version": 2,
         "as_of": as_of.isoformat(),
         "root": ".",
         "files_scanned": len(files),
@@ -396,7 +426,9 @@ def audit(root: Path, as_of: date) -> dict[str, object]:
         "exceptions": [asdict(item) for item in exceptions],
         "external_facts": [asdict(item) for item in facts],
         "passed": not findings
-        and all(item.status == "current" for item in facts),
+        and all(
+            item.status == "review-recorded-not-reverified-offline" for item in facts
+        ),
     }
 
 
@@ -419,16 +451,22 @@ def print_report(report: dict[str, object]) -> None:
         print(f"       Recommendation: {finding['replacement']}")
     print()
 
-    print("External facts (human verification; no network requests were made)")
+    print("External fact review records")
+    print("  This offline run did not open or reverify any external source.")
     for fact in facts:
-        label = "PASS" if fact["status"] == "current" else "REVIEW"
+        label = (
+            "REVIEW RECORDED / NOT REVERIFIED OFFLINE"
+            if fact["status"] == "review-recorded-not-reverified-offline"
+            else "ACTION REQUIRED"
+        )
         print(
             f"  {label} {fact['fact_id']}: {fact['status']}; "
             f"reviewed {fact['last_reviewed']}; due {fact['review_due']}"
         )
         print(f"       {fact['question']}")
+        print(f"       Durable review record: {fact['evidence_record']}")
         for source in fact["evidence"]:
-            print(f"       Evidence: {source}")
+            print(f"       Primary source to reverify: {source}")
     print()
 
     print("Active exceptions")
@@ -465,14 +503,48 @@ def run_self_test() -> int:
         if found_ids != {"GIT_ADD_ALL", "STALE_COST_COMMAND"}:
             print(f"self-test failed: unexpected rules {sorted(found_ids)}", file=sys.stderr)
             return 1
-        if {item["status"] for item in bad["external_facts"]} != {"current"}:
-            print("self-test failed: current facts were not accepted", file=sys.stderr)
+        if {item["status"] for item in bad["external_facts"]} != {
+            "review-recorded-not-reverified-offline"
+        }:
+            print("self-test failed: recorded reviews were not accepted", file=sys.stderr)
+            return 1
+        if not all(
+            item["evidence_record"].startswith("https://")
+            for item in bad["external_facts"]
+        ):
+            print("self-test failed: durable review evidence is missing", file=sys.stderr)
             return 1
 
-        due = audit(root, date(2026, 10, 23))
+        due = audit(root, date(2026, 10, 1))
         if {item["status"] for item in due["external_facts"]} != {"review-due"}:
             print("self-test failed: due facts were not reported", file=sys.stderr)
             return 1
+
+        (root / "docs/lessons").mkdir(exist_ok=True)
+        lesson_fixture = root / "docs/lessons/fixture.md"
+        lesson_fixture.write_text("### Skipped title\n\n## Section\n", encoding="utf-8")
+        heading_findings, _ = scan_file(root, lesson_fixture, date(2026, 7, 23))
+        if [item.rule_id for item in heading_findings] != ["LESSON_FIRST_HEADING"]:
+            print("self-test failed: non-H1 lesson title was not rejected", file=sys.stderr)
+            return 1
+        lesson_fixture.write_text("# Valid title\n\n## Section\n", encoding="utf-8")
+        heading_findings, _ = scan_file(root, lesson_fixture, date(2026, 7, 23))
+        if heading_findings:
+            print("self-test failed: valid lesson heading was rejected", file=sys.stderr)
+            return 1
+
+        (root / "starter").mkdir()
+        (root / "starter/README.md").write_text("Use `/cost` here.\n", encoding="utf-8")
+        starter_report = audit(root, date(2026, 7, 23))
+        starter_findings = [
+            item
+            for item in starter_report["findings"]
+            if item["path"] == "starter/README.md"
+        ]
+        if [item["rule_id"] for item in starter_findings] != ["STALE_COST_COMMAND"]:
+            print("self-test failed: starter README was not scanned", file=sys.stderr)
+            return 1
+        (root / "starter/README.md").write_text("# Starter\n", encoding="utf-8")
 
         rule_examples = {
             "STALE_COST_COMMAND": "Use `/cost` here.",

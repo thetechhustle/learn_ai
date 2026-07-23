@@ -2,7 +2,7 @@
 
 Everything you've built so far has one dependency you haven't addressed: *you remembering things*. Verify before committing. Run the wrap routine. Keep the agent off the no-touch files. You've been the enforcement mechanism — and humans are wonderful, inconsistent enforcement mechanisms.
 
-This chapter removes the dependency. **Hooks** run your checks automatically at the seams of every session; **validation harnesses** give the agent a truth-teller to test itself against; **permission policy** turns your judgment into configuration. The result is the thing the premium cohorts call "agentic validation" and what it really is: quality that doesn't require anyone to remember.
+This chapter reduces that dependency. **Hooks** can trigger checks at configured events; **validation harnesses** give the agent evidence to test itself against; **permission policy** records some of your boundaries in configuration. Together they make selected checks repeatable, while human review remains necessary for intent and risk.
 
 !!! abstract "What you will learn"
     - Explain why guardrails-as-mechanism beat guardrails-as-discipline.

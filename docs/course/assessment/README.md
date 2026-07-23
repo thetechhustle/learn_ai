@@ -4,11 +4,16 @@ These assessments measure whether you can make sound decisions with an AI agent,
 
 ## Assessment path
 
-1. Before Chapter 1, complete the entry form in [Paired Diagnostics](diagnostic.md#entry-diagnostic).
-2. After each chapter, complete its task in [Chapter Checkpoints](chapter-checkpoints.md).
-3. Use the [Answer Key and Evidence Guide](answer-key.md) to self-score. When possible, ask a peer to score from the same evidence without coaching.
-4. After Chapter 11, complete the exit form in [Paired Diagnostics](diagnostic.md#exit-diagnostic).
-5. Compare entry and exit results with the [Competency Framework](competency-framework.md), then choose your next practice target.
+1. Read the answer-free [Term Sheet](term-sheet.md), [Competency Framework](competency-framework.md), and [Scoring Guide](scoring-guide.md).
+2. Before Chapter 1, complete and save the entry form in [Paired Diagnostics](diagnostic.md#entry-diagnostic).
+3. After each chapter, complete and save its task in [Chapter Checkpoints](chapter-checkpoints.md).
+4. Use [Finish and Save Before Review](review-after-attempt.md) before opening worked patterns. Disclose any prior exposure instead of pretending it did not happen.
+5. Self-score and revise. When possible, ask a peer to score the saved evidence without coaching.
+6. After Chapter 11, complete the different, paired exit situations on the same competency scale.
+7. Compare entry and exit results with the [Competency Framework](competency-framework.md), then choose your next practice target.
+
+The navigation route above does not include a direct answer-key item. It reduces
+accidental preview; it cannot and is not intended to prevent deliberate access.
 
 The chapter tasks complement the [Capstone](../capstone.md). They are smaller competency checks; the capstone asks you to combine the competencies in one responsible build.
 

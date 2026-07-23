@@ -20,7 +20,7 @@ This is the chapter where the two lanes converge: from here on, everyone is doin
 
 ## Real talk
 
-The difference between people who get magic out of agents and people who get mush isn't the model, the plan tier, or luck. It's that the first group runs a *disciplined loop* — clear brief in, plan reviewed, work watched, output verified — and the second group types wishes and hopes. Discipline is learnable. That's this chapter.
+This chapter tests whether a disciplined loop improves a bounded task: clear brief, reviewed plan, inspected work, and independent verification. The result still depends on the model, context, tools, task, and reviewer.
 
 <!-- lesson-index:start -->
 

@@ -12,7 +12,7 @@ Engineers: don't skip this one on principle. The lessons connect model mechanics
     - Choose a model and a tool for a given job with a straight face.
 
 !!! success "Builder principle"
-    You don't need to know how the engine works to drive — but the best drivers always do.
+    Practical model knowledge helps you predict failure and choose proportionate checks.
 
 !!! example "Watch with this chapter"
     - [Large Language Models explained briefly](https://www.youtube.com/watch?v=LPZh9BOjkQs) — 3Blue1Brown (8 min). Watch before Lesson 2.1.
@@ -21,7 +21,7 @@ Engineers: don't skip this one on principle. The lessons connect model mechanics
 
 ## Real talk
 
-Two people ask an AI the same question. One gets gold, one gets garbage, and the difference isn't luck — it's that one of them knows what the machine actually does with their words. This chapter puts you in the first group permanently.
+Similar requests can produce different-quality results because context, model behavior, tools, and verification differ. This chapter gives you a vocabulary for investigating those differences rather than treating them as luck.
 
 <!-- lesson-index:start -->
 

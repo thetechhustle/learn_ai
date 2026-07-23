@@ -1,6 +1,8 @@
 # Chapter 1: The Shift — Welcome to the Agentic Era
 
-Every generation gets one or two moments where the ground moves and the people who notice early get to choose their position. The internet was one. Mobile was one. This — AI that doesn't just talk but *works* — is one, and it's happening right now, while the manuals are still being written.
+AI tools are changing quickly, and agents add consequential actions to familiar
+language-model output. This chapter starts with the capabilities you can observe,
+the limits you must test, and the claims you should treat as hypotheses.
 
 This chapter is the orientation. No installs, no code, no terminal. Just the mental map: what actually changed, why "agents" are different from the chatbots everyone already knows, what people like you are building with them today, and how to run this course so you finish it.
 
@@ -15,16 +17,19 @@ This chapter is the orientation. No installs, no code, no terminal. Just the men
     You don't have to understand everything to start. You have to start to understand everything.
 
 !!! example "Watch with this chapter"
-    - [Large Language Models explained briefly](https://www.youtube.com/watch?v=LPZh9BOjkQs) — 3Blue1Brown (8 min). The single best short explainer on what's under the hood.
-    - [Intro to Large Language Models](https://www.youtube.com/watch?v=zjkBMFhNj_g) — Andrej Karpathy (1 hr). No math, no code — the talk that made millions of people finally *get it*.
+    - [Large Language Models explained briefly](https://www.youtube.com/watch?v=LPZh9BOjkQs) — 3Blue1Brown (8 min). An optional visual introduction.
+    - [Intro to Large Language Models](https://www.youtube.com/watch?v=zjkBMFhNj_g) — Andrej Karpathy (1 hr). An optional longer technical overview.
 
 ## Real talk
 
-A barber in Houston used an AI agent to build a booking site in a weekend — something he'd been quoted $4,000 for. A project manager in Atlanta automated her Monday reporting and got three hours of her week back. A staff engineer in the Bay stopped writing boilerplate entirely and now reviews the work of five parallel agents like a foreman on a site.
+Consider three **illustrative scenarios, not documented case studies**: a local
+business owner prototypes a booking site, a project manager tests a reporting
+routine, and an engineer compares parallel agents with sequential work. The
+relevant questions are what each person actually measured, what the work cost,
+which risks remained, and whether the result transferred to a second task.
 
-Same tool. Three completely different people. None of them waited until they felt "ready."
-
-That's the shift this chapter maps. The rest of the course teaches you to run it.
+The course gives you a way to run those tests without treating an anecdote as
+market, productivity, or career evidence.
 
 ## How to use this chapter
 

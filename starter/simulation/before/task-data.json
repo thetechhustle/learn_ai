@@ -1,0 +1,8 @@
+[
+  {"id":"T-101","title":"Draft kickoff notes","status":"backlog","risk":"low","owner":"Avery"},
+  {"id":"T-102","title":"Review accessibility checklist","status":"in-progress","risk":"medium","owner":"Blair"},
+  {"id":"T-103","title":"Confirm launch copy","status":"done","risk":"low","owner":"Casey"},
+  {"id":"T-104","title":"Verify source citations","status":"backlog","risk":"high","owner":""},
+  {"id":"T-105","title":"Test keyboard navigation","status":"in-progress","risk":"high","owner":"Devon"},
+  {"id":"T-106","title":"Archive sample brief","status":"done","risk":"medium","owner":"Emery"}
+]

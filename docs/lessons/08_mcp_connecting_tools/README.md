@@ -22,7 +22,7 @@ This chapter demystifies the protocol, gets your first servers connected, teache
 
 ## Real talk
 
-The demo that converts every skeptic is always the same shape: "wait — it just *checked the actual database*?" The distance between an agent that talks about your systems and an agent that *touches* them is one chapter. This one. The judgment to do it safely is included, because the culture doesn't need cautionary tales — it needs professionals.
+Connecting an agent to an actual system changes both its evidence and its risk. This chapter practices that decision with explicit capability, data, credential, and approval boundaries.
 
 <!-- lesson-index:start -->
 

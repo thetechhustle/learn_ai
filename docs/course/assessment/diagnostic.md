@@ -1,6 +1,14 @@
 # Paired Diagnostics
 
-The entry and exit forms assess the same eight competencies through different situations. Complete the entry form before Chapter 1 and the exit form after Chapter 11. The matched design measures transfer without relying on memorized answers.
+The entry and exit forms assess the same eight competencies through different
+situations. Complete the entry form before Chapter 1 and the exit form after
+Chapter 11. This paired design is intended to elicit transfer rather than repeated
+answers; it is a course feedback instrument, not a validated credential or
+psychometric test.
+
+Use the answer-free [Term Sheet](term-sheet.md) for unfamiliar vocabulary and
+read the [Scoring Guide](scoring-guide.md) before starting. Neither contains
+worked response patterns.
 
 ## Entry Diagnostic
 
@@ -13,8 +21,9 @@ Allow about 45–75 minutes. Short, concrete answers are enough.
 1. Label a page or recording `Entry Diagnostic` and add the date.
 2. Answer all eight situations. If you do not know a command or product, describe the process you would use.
 3. Note any AI, person, or reference source that helped.
-4. Self-score with the [Answer Key and Evidence Guide](answer-key.md#diagnostic-reference-patterns).
-5. Record one evidence sentence and one next action for each competency.
+4. Save the original response and record whether worked patterns were viewed before the attempt: `yes / no / unsure`.
+5. Continue through [Finish and Save Before Review](review-after-attempt.md), then self-score.
+6. Record one evidence sentence and one next action for each competency.
 
 ### Entry situations
 
@@ -82,9 +91,13 @@ Decide how to demonstrate or deliver the work. Address authorization, data minim
 
 Interpret your profile with [What scores mean](competency-framework.md#what-scores-mean). Save the original answers unchanged so the exit comparison is honest.
 
+Record: `Worked answer patterns viewed before entry attempt: yes / no / unsure`.
+
 ## Exit Diagnostic
 
-Complete this after Chapter 11 and before or alongside the capstone. This form assesses the same competencies as the entry diagnostic through different situations, so improvement means transfer rather than memorizing an answer.
+Complete this after Chapter 11 and before or alongside the capstone. This form
+uses different situations on the entry competencies. Stronger evidence can
+support a transfer claim, but score change alone does not prove general mastery.
 
 Allow about 60–90 minutes. Work independently on the judgment first. You may then use tools to produce evidence, but disclose their contribution.
 
@@ -93,8 +106,9 @@ Allow about 60–90 minutes. Work independently on the judgment first. You may t
 1. Label a page or recording `Exit Diagnostic` and add the date.
 2. Answer all eight situations. Include artifacts or demonstrations where requested.
 3. Cite the current source for any product-specific behavior that materially affects your plan.
-4. Self-score with the [Answer Key and Evidence Guide](answer-key.md#diagnostic-reference-patterns).
-5. Ask a peer to score at least C3, C6, and C8 without seeing your self-score.
+4. Save the original response and record whether worked patterns were viewed before the attempt: `yes / no / unsure`.
+5. Continue through [Finish and Save Before Review](review-after-attempt.md), then self-score.
+6. Ask a peer to score at least C3, C6, and C8 without seeing your self-score.
 
 ### Exit situations
 
@@ -161,5 +175,7 @@ Create a launch decision and evidence pack: appropriate deployment, authorizatio
 | **Total / 24** |  |  |  |  |  |
 
 Use [What scores mean](competency-framework.md#what-scores-mean), but review the evidence before the number. A lower score can reflect more accurate self-judgment. Resolve self/peer differences by pointing to evidence, not averaging automatically.
+
+Record: `Worked answer patterns viewed before exit attempt: yes / no / unsure`.
 
 Choose one next project that exercises your lowest competency. If C3, C6, or C8 is below 2, keep the project isolated, synthetic, and supervised.
