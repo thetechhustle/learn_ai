@@ -121,6 +121,7 @@ chapter as holding an Anthropic certification.
 - [Model Context Protocol introduction](https://modelcontextprotocol.io/docs/getting-started/intro)
 - [MCP architecture](https://modelcontextprotocol.io/docs/learn/architecture)
 - [MCP security best practices](https://modelcontextprotocol.io/docs/tutorials/security/security_best_practices)
+- [Certification source log](../../course/certification-source-log.md)
 - [Companion video: Claude Certified Architect — Foundations](https://www.youtube.com/watch?v=reDRM0tqhNs)
 
 The [course maintenance guide](../../course/maintenance.md) explains how to
