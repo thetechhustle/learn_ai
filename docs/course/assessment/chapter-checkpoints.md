@@ -278,7 +278,32 @@ No live service is required. A local artifact, screen recording, annotated mocku
 
 **Evidence standard:** A capable launch is reviewable by its intended user, supportable after handoff, and honest about evidence and limits. A live URL by itself is insufficient.
 
-## Chapter 12 — Certification readiness with evidence\n\n**Primary competencies:** C1, C4, C6, C8\n**Reinforced competencies:** C2, C5, C7\n**Task:** Build a certification readiness and evidence pack using the Chapter 12 lab. Translate the current provider blueprint and companion-video timestamps into a study matrix, complete or simulate the Community Workshop Digest lab, defend three architecture scenarios, and record what is certified, completed, evidenced, simulated, or unknown.\n\n=== \"No-code lane\"\n\n    Use the supplied synthetic fixtures, architecture cards, decision tables, and recorded explanations. You do not need a paid account, live SDK, MCP server, or exam appointment. Your evidence must still show the data boundary, tool choice, failure path, and reviewer disposition.\n\n=== \"Engineer lane\"\n\n    Use a disposable repository with synthetic data. Run the deterministic fixture/evaluator path before adding any model or SDK integration. If you use the Agent SDK or MCP, record the current documentation, package/runtime versions, permissions, and what you actually executed.\n\n**Required evidence**\n\n- A dated certification readiness brief with the official source checked for access, format, cost, accommodations, and renewal questions.\n- A domain study matrix with video timestamps, current primary references, performance verbs, labs, evidence of done, confidence, and review dates.\n- A lab evidence pack with vision, context, tool/trust decisions, evaluation set, seeded failure, correction, and independent review.\n- Three scenario defenses, including one case where the strongest answer is to decline, narrow, or escalate automation.\n- A claim ledger that distinguishes provider-issued certification, course completion, project evidence, live execution, simulation, delegation, and unknowns.\n- One workshop or video-lesson outline with timestamp, source date, learner objective, lab, failure drill, accessibility support, and current-doc recheck note.\n\n**Evidence standard:** A capable submission uses the certification as a learning target without calling the course a credential, makes no unsupported eligibility or career claim, chooses the narrowest justified capability, catches a seeded failure, and leaves another person enough evidence to reproduce or challenge the decision. A polished study schedule with no lab or a passing-looking transcript with no independent check is insufficient.\n\n## Chapter score sheet
+## Chapter 12 — Certification readiness with evidence
+
+**Primary competencies:** C1, C4, C6, C8
+**Reinforced competencies:** C2, C5, C7
+**Task:** Build a certification readiness and evidence pack using the Chapter 12 lab. Translate the current provider blueprint and companion-video timestamps into a study matrix, complete or simulate the Community Workshop Digest lab, defend three architecture scenarios, and record what is certified, completed, evidenced, simulated, or unknown.
+
+=== "No-code lane"
+
+    Use the supplied synthetic fixtures, architecture cards, decision tables, and recorded explanations. You do not need a paid account, live SDK, MCP server, or exam appointment. Your evidence must still show the data boundary, tool choice, failure path, and reviewer disposition.
+
+=== "Engineer lane"
+
+    Use a disposable repository with synthetic data. Run the deterministic fixture/evaluator path before adding any model or SDK integration. If you use the Agent SDK or MCP, record the current documentation, package/runtime versions, permissions, and what you actually executed.
+
+**Required evidence**
+
+- A dated certification readiness brief with the official source checked for access, format, cost, accommodations, and renewal questions.
+- A domain study matrix with video timestamps, current primary references, performance verbs, labs, evidence of done, confidence, and review dates.
+- A lab evidence pack with vision, context, tool/trust decisions, evaluation set, seeded failure, correction, and independent review.
+- Three scenario defenses, including one case where the strongest answer is to decline, narrow, or escalate automation.
+- A claim ledger that distinguishes provider-issued certification, course completion, project evidence, live execution, simulation, delegation, and unknowns.
+- One workshop or video-lesson outline with timestamp, source date, learner objective, lab, failure drill, accessibility support, and current-doc recheck note.
+
+**Evidence standard:** A capable submission uses the certification as a learning target without calling the course a credential, makes no unsupported eligibility or career claim, chooses the narrowest justified capability, catches a seeded failure, and leaves another person enough evidence to reproduce or challenge the decision. A polished study schedule with no lab or a passing-looking transcript with no independent check is insufficient.
+
+## Chapter score sheet
 
 Use one copy for every chapter.
 
