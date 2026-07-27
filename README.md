@@ -6,14 +6,14 @@
 
 <p><strong>The free, open-source agentic AI course — from curious to shipping, built for the culture. ⚡</strong></p>
 
-<p><em>54 lessons &nbsp;·&nbsp; 11 chapters &nbsp;·&nbsp; 2 learning lanes &nbsp;·&nbsp; course materials free and open</em></p>
+<p><em>60 lessons &nbsp;·&nbsp; 12 chapters &nbsp;·&nbsp; 2 learning lanes &nbsp;·&nbsp; course materials free and open</em></p>
 
 <p>
   <a href="https://thetechhustle.github.io/learn_ai/">
     <img alt="Course Site" src="https://img.shields.io/badge/Course%20Site-Live-7c3aed?style=for-the-badge&logo=bookstack&logoColor=white" />
   </a>
-  <img alt="Lessons" src="https://img.shields.io/badge/Lessons-54-111827?style=for-the-badge&logoColor=white" />
-  <img alt="Chapters" src="https://img.shields.io/badge/Chapters-11-111827?style=for-the-badge&logoColor=white" />
+  <img alt="Lessons" src="https://img.shields.io/badge/Lessons-60-111827?style=for-the-badge&logoColor=white" />
+  <img alt="Chapters" src="https://img.shields.io/badge/Chapters-12-111827?style=for-the-badge&logoColor=white" />
   <a href="LICENSE">
     <img alt="License MIT" src="https://img.shields.io/badge/License-MIT-f59e0b?style=for-the-badge" />
   </a>
@@ -105,14 +105,14 @@ of trust, payment, employment, or product success.
 │  Skills · MCP & Tools · Hooks                                      │
 │  Validation · Guardrails · Safety                                  │
 ├────────────────────────────────────────────────────────────────────┤
-│  TRACK 4 · Orchestration & Shipping           Chapters 10–11       │
+│  TRACK 4 · Orchestration & Shipping           Chapters 10–12       │
 │  Subagents · Agent Teams · Worktrees                               │
 │  Deployment · Costs · Selling What You Build                       │
 └────────────────────────────────────────────────────────────────────┘
 ```
 
 <details>
-<summary><strong>📋 All 11 Chapters — click to expand</strong></summary>
+<summary><strong>📋 All 12 Chapters — click to expand</strong></summary>
 
 <br/>
 
@@ -129,6 +129,7 @@ of trust, payment, employment, or product success.
 | 09 | Hooks and Guardrails | Hooks, agentic validation, permissions, safety rails |
 | 10 | Agent Teams | Subagents, Git worktrees, parallel development, agentic harnesses |
 | 11 | Ship It and Sell It | Deployment, production workflows, cost strategy, selling your work, staying current |
+| 12 | Get Certified | Certification planning, agent architecture, evidence labs, scenario defense, workshop design |
 
 </details>
 
@@ -138,8 +139,8 @@ of trust, payment, employment, or product success.
 
 | Route | Included work | Planning range |
 |---|---|---:|
-| Reading/reference | 54 lessons and unscored understanding questions | 12–18 hours |
-| Assessed practice | Reading, setup or simulation, diagnostics, essential practice, 11 checkpoints, scoring, and revision | 30–50 hours |
+| Reading/reference | 60 lessons and unscored understanding questions | 12–18 hours |
+| Assessed practice | Reading, setup or simulation, diagnostics, essential practice, 12 checkpoints, scoring, and revision | 30–50 hours |
 | Assessed practice + capstone | Assessed route plus a scoped capstone and peer review | 40–75+ hours |
 
 Videos, repeated "Try it now" builds, extra tool experiments, and portfolio polish
@@ -244,7 +245,7 @@ This course is open source and community-maintained. Every improvement matters.
 docs/
 ├── index.md              # Course landing page
 ├── course/               # Overview, setup, syllabus, capstone, glossary, cohort
-├── lessons/              # 11 chapter directories, 54 lesson files
+├── lessons/              # 12 chapter directories, 60 lesson files
 ├── assets/               # SVG visuals
 ├── stylesheets/          # Course styling
 └── javascripts/          # Course behavior
