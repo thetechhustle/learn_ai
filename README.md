@@ -139,13 +139,13 @@ of trust, payment, employment, or product success.
 
 | Route | Included work | Planning range |
 |---|---|---:|
-| Reading/reference | 60 lessons and unscored understanding questions | 12–18 hours |
+| Reading/reference | 60 lessons and unscored understanding questions | 13–20 hours |
 | Assessed practice | Reading, setup or simulation, diagnostics, essential practice, 12 checkpoints, scoring, and revision | 30–50 hours |
 | Assessed practice + capstone | Assessed route plus a scoped capstone and peer review | 40–75+ hours |
 
 Videos, repeated "Try it now" builds, extra tool experiments, and portfolio polish
 are optional extensions and commonly add 15–30+ hours. These ranges are planning
-estimates from the July 23, 2026 course inventory, not finish-time or outcome
+estimates from the July 27, 2026 course inventory, not finish-time or outcome
 promises. See the [course overview](https://thetechhustle.github.io/learn_ai/course/overview/#time-expectations-and-routes)
 for route definitions and pause points.
 
