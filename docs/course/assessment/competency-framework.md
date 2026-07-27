@@ -81,6 +81,7 @@ A polished artifact is not automatically Level 3. A plain artifact with strong j
 | 9 | C7 | C3, C4, C6 |
 | 10 | C7 | C2, C3, C4 |
 | 11 | C8 | C4, C6, C7 |
+| 12 | C1, C4, C6, C8 | C2, C5, C7 |
 
 **Primary** means the chapter checkpoint is deliberately designed to produce
 evidence for that competency. **Reinforced** means the chapter practices it and
