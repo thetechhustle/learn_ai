@@ -41,7 +41,7 @@ accessibility needs, and project scope can move them substantially.
 | Route | Essential work | Planning range |
 | --- | --- | ---: |
 | Reading/reference | Read all lessons and use the unscored understanding questions. No setup, assessment, videos, or builds required. | 13–20 hours |
-| Assessed practice | Reading, entry and exit diagnostics, setup or simulation baseline, one bounded practice artifact per track, all 12 chapter checkpoints, scoring, and revisions. | 30–50 hours |
+| Assessed practice | Reading, entry and exit diagnostics, setup or simulation baseline, one bounded practice artifact per track, all 12 chapter checkpoints, scoring, and revisions. | 33–55 hours |
 | Assessed practice + capstone | Everything in assessed practice plus one scoped capstone and peer review. | 40–75+ hours |
 
 Planning arithmetic: the reading range allows roughly 13–20 minutes per lesson.
