@@ -33,20 +33,20 @@ You will need:
 
 ## Time expectations and routes
 
-These planning ranges come from the July 23, 2026 course inventory: 54 lessons,
-49 practice sections, 11 checkpoints, two diagnostics, setup, and the capstone.
+These planning ranges come from the July 27, 2026 course inventory: 60 lessons,
+55 practice sections, 12 checkpoints, two diagnostics, setup, and the capstone.
 They are estimates, not completion promises. Reading speed, tool access, revision,
 accessibility needs, and project scope can move them substantially.
 
 | Route | Essential work | Planning range |
 | --- | --- | ---: |
-| Reading/reference | Read all lessons and use the unscored understanding questions. No setup, assessment, videos, or builds required. | 12–18 hours |
-| Assessed practice | Reading, entry and exit diagnostics, setup or simulation baseline, one bounded practice artifact per track, all 11 chapter checkpoints, scoring, and revisions. | 30–50 hours |
+| Reading/reference | Read all lessons and use the unscored understanding questions. No setup, assessment, videos, or builds required. | 13–20 hours |
+| Assessed practice | Reading, entry and exit diagnostics, setup or simulation baseline, one bounded practice artifact per track, all 12 chapter checkpoints, scoring, and revisions. | 33–55 hours |
 | Assessed practice + capstone | Everything in assessed practice plus one scoped capstone and peer review. | 40–75+ hours |
 
 Planning arithmetic: the reading range allows roughly 13–20 minutes per lesson.
-The assessed range adds 18–32 hours for diagnostics, setup/simulation, four
-selected practice artifacts, 11 checkpoints, scoring, and revision. The capstone
+The assessed range adds 20–35 hours for diagnostics, setup/simulation, four
+selected practice artifacts, 12 checkpoints, scoring, and revision. The capstone
 adds a 10–25+ hour scoped build and peer pass. These are workload assumptions to
 replace after a real timed pilot, not measured completion data.
 
@@ -57,7 +57,7 @@ more of that practice; experienced builders may test out through strong checkpoi
 evidence.
 
 The assessed route is the minimum viable evidence path, not a claim of mastery.
-Pause after Chapters 3, 6, 9, and 11 to review your evidence and decide whether to
+Pause after Chapters 3, 6, 9, 11, and 12 to review your evidence and decide whether to
 continue, repeat a weak competency, or stop with a useful partial course.
 
 ## Course tracks
@@ -67,7 +67,7 @@ continue, repeat a weak competency, or stop with a useful partial course.
 | Foundations | 1–3 | The agentic shift, how AI actually works, terminal + Git + Claude Code setup |
 | Context engineering | 4–6 | The agentic loop, CLAUDE.md, memory layers, second brain, everyday builds |
 | Agentic engineering | 7–9 | Skills, MCP and tools, hooks, validation, and guardrails |
-| Orchestration and shipping | 10–11 | Subagents, agent teams, parallel work, launching, and selling |
+| Orchestration and shipping | 10–12 | Subagents, agent teams, parallel work, launching, and selling |
 
 For the complete chapter sequence, use the [Syllabus](syllabus.md). When you finish the chapters, the [Capstone](capstone.md) is where you prove it to yourself — and produce the receipt you can show anyone else.
 

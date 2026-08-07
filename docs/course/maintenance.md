@@ -33,6 +33,9 @@ The audit has two deliberately separate outputs:
    that a claim remains accurate.
 
 Use `python3 scripts/audit_course.py --as-of YYYY-MM-DD` to reproduce a dated run.
+
+The Chapter 12 [certification source log](certification-source-log.md) uses the same discipline for provider eligibility, exam-format, video, SDK, and MCP claims. Recheck it before a cohort, workshop, paid exam decision, or derivative video is published.
+
 CI uploads `content-audit-report.json` as the evidence artifact even when a check
 fails.
 

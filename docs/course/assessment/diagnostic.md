@@ -2,7 +2,7 @@
 
 The entry and exit forms assess the same eight competencies through different
 situations. Complete the entry form before Chapter 1 and the exit form after
-Chapter 11. This paired design is intended to elicit transfer rather than repeated
+Chapter 12. This paired design is intended to elicit transfer rather than repeated
 answers; it is a course feedback instrument, not a validated credential or
 psychometric test.
 
@@ -95,7 +95,7 @@ Record: `Worked answer patterns viewed before entry attempt: yes / no / unsure`.
 
 ## Exit Diagnostic
 
-Complete this after Chapter 11 and before or alongside the capstone. This form
+Complete this after Chapter 12 and before or alongside the capstone. This form
 uses different situations on the entry competencies. Stronger evidence can
 support a transfer claim, but score change alone does not prove general mastery.
 

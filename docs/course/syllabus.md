@@ -15,8 +15,9 @@ The course is organized as one continuous builder path. Foundations first, then 
 | [Chapter 09: Hooks and Guardrails](../lessons/09_hooks_and_guardrails/README.md) | 4 lessons |
 | [Chapter 10: Agent Teams — Multi-Agent Orchestration](../lessons/10_agent_teams/README.md) | 5 lessons |
 | [Chapter 11: Ship It and Sell It](../lessons/11_ship_and_sell/README.md) | 5 lessons |
+| [Chapter 12: Get Certified — Turn Agentic Skill into Defensible Proof](../lessons/12_get_certified/README.md) | 6 lessons |
 
-**54 lessons · 4 tracks · 1 capstone.**
+**60 lessons · 4 tracks · 1 capstone.**
 
 Each chapter ends with a scored [performance checkpoint](assessment/chapter-checkpoints.md). Read the [scoring guide](assessment/scoring-guide.md) before you begin, save the first attempt, then use [Review After Your Attempt](assessment/review-after-attempt.md) to reach the worked evidence patterns. Open-ended builds are scored against observable evidence, not one preferred implementation.
 
@@ -27,6 +28,6 @@ Each chapter ends with a scored [performance checkpoint](assessment/chapter-chec
 | Foundations | 1–3 | The mental models, the vocabulary, and a working command center |
 | Context engineering | 4–6 | An agent that performs like a teammate, plus your first real builds |
 | Agentic engineering | 7–9 | Skills, MCP connections, and guardrails — a customized, safe agent |
-| Orchestration & shipping | 10–11 | Multi-agent workflows and a launched, sellable project |
+| Orchestration & shipping | 10–12 | Multi-agent workflows and a launched, sellable project |
 
-Before Chapter 1, save an [entry diagnostic](assessment/diagnostic.md) baseline. When you finish Chapter 11, complete the different, paired exit situations on the same scale, compare the evidence, then decide whether to take on the [Capstone](capstone.md).
+Before Chapter 1, save an [entry diagnostic](assessment/diagnostic.md) baseline. When you finish Chapter 12, complete the different, paired exit situations on the same scale, compare the evidence, then decide whether to take on the [Capstone](capstone.md).
